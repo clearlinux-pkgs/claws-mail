@@ -1,0 +1,18 @@
+# This file contains pkgconfig build requirements that get picked up
+# but are undesirable. One entry per line, no whitespace.
+NetworkManager
+claws-contacts
+enchant
+gtk+-3.0
+indicate-0.5
+indicate-0.6
+indicate-0.7
+libcanberra-gtk
+libgdata
+libnotify
+libsoup-2.4
+libsoup-gnome-2.4
+poppler-glib
+pygtk-2.0
+webkit-1.0
+enchant-dev
