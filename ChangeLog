@@ -1,3 +1,2811 @@
+2016-11-06  [Paul] 3.14.1
+
+	* NEWS
+	* README
+	* RELEASE_NOTES		
+		for release 3.14.1
+
+2016-11-06  [Paul] 3.14.0-135-gec15f56
+
+	* po/ca.po
+	* po/cs.po
+	* po/da.po
+	* po/es.po
+	* po/fi.po
+	* po/fr.po
+	* po/he.po
+	* po/id_ID
+	* po/id_ID.po
+	* po/it.po
+	* po/nb.po
+	* po/nl.po
+	* po/pt_BR.po
+	* po/ru.po
+	* po/sk.po
+	* po/sv.po
+	* po/tr.po
+	* po/zh_TW.po		
+		updated translations  submitted by David Medina, David Vachulka, Erik
+		P. Olsen, Ricardo Mones, Flammie A Pirinen, Tristan Chabredier,
+		Isratine Citizen, M. Sulchan Darmawan, Luigi Votta, Petter Adsen,
+		Marcel Pol, Frederico Goncalves Guimaraes, Mikhail Kurinnoi, Slavko,
+		Andreas Rönnquist, Numan Demirdöğen, Mark Chang
+
+2016-11-06  [Ricardo Mones] 3.14.0-134-g8201993
+
+	* src/common/tlds.h		
+		Update list of TLDs for release
+
+2016-11-05  [Paul] 3.14.0-133-g6ca7268
+
+	* src/summaryview.h		
+		missing from g8bd6066
+
+2016-11-05  [Andrej Kacian] 3.14.0-132-gaaa7ab7
+
+	* src/gtk/gtkcmclist.c
+	* src/gtk/gtkcmclist.h
+	* src/gtk/gtkutils.c		
+		Minimize scrolling in gtkut_ctree_node_move_if_on_the_edge(). 
+		Instead of scrolling to get the target row to the middle of the
+		viewport (offset 0.5), scroll to offsets 0.2 or 0.8 if the target row
+		is above or below current viewport, respectively. This makes it
+		consistent with scrolling when the target row is only partially
+		visible.
+
+2016-11-05  [Andrej Kacian] 3.14.0-131-g2193529
+
+	* src/summaryview.c		
+		Only scroll summaryview to the middle when necessary.
+
+2016-11-05  [Andrej Kacian] 3.14.0-130-g94030d1
+
+	* src/summaryview.c		
+		Do not process folder marks when just refreshing summaryview.
+
+2016-11-05  [Paul] 3.14.0-129-g8bd6066
+
+	* src/folderview.c
+	* src/folderview.h
+	* src/mainwindow.c
+	* src/messageview.c
+	* src/summaryview.c		
+		more fixes for Go To actions not obeying 'always_show_msg' option
+
+2016-11-04  [Andrej Kacian] 3.14.0-128-g512b1eb
+
+	* src/plugins/vcalendar/claws.def		
+		Added missing symbol to vcalendar's claws.def.
+
+2016-10-27  [Ricardo Mones] 3.14.0-127-gf755acc
+
+	* src/plugins/pdf_viewer/poppler_viewer.c
+	* src/plugins/pdf_viewer/poppler_viewer.h		
+		Update license stanza
+
+2016-10-26  [Ricardo Mones] 3.14.0-126-g89d3485
+
+	* src/Makefile.am
+	* src/pixmaps/doc_index.xpm
+	* src/pixmaps/doc_index_close.xpm
+	* src/pixmaps/doc_info.xpm
+	* src/pixmaps/first_arrow.xpm
+	* src/pixmaps/last_arrow.xpm
+	* src/pixmaps/left_arrow.xpm
+	* src/pixmaps/right_arrow.xpm
+	* src/pixmaps/rotate_left.xpm
+	* src/pixmaps/rotate_right.xpm
+	* src/pixmaps/zoom_fit.xpm
+	* src/pixmaps/zoom_in.xpm
+	* src/pixmaps/zoom_out.xpm
+	* src/pixmaps/zoom_width.xpm
+	* src/plugins/pdf_viewer/doc_index.xpm
+	* src/plugins/pdf_viewer/doc_index_close.xpm
+	* src/plugins/pdf_viewer/doc_info.xpm
+	* src/plugins/pdf_viewer/first_arrow.xpm
+	* src/plugins/pdf_viewer/last_arrow.xpm
+	* src/plugins/pdf_viewer/left_arrow.xpm
+	* src/plugins/pdf_viewer/poppler_viewer.c
+	* src/plugins/pdf_viewer/right_arrow.xpm
+	* src/plugins/pdf_viewer/rotate_left.xpm
+	* src/plugins/pdf_viewer/rotate_right.xpm
+	* src/plugins/pdf_viewer/zoom_fit.xpm
+	* src/plugins/pdf_viewer/zoom_in.xpm
+	* src/plugins/pdf_viewer/zoom_out.xpm
+	* src/plugins/pdf_viewer/zoom_width.xpm
+	* src/stock_pixmap.c
+	* src/stock_pixmap.h		
+		Make pdf_viewer icons themeable
+
+2016-10-26  [Paul] 3.14.0-125-g8352f9b
+
+	* src/summary_search.c
+	* src/summaryview.c
+	* src/summaryview.h		
+		removed unnecessary do_refresh flag from summary_select_node()
+
+2016-10-25  [Paul] 3.14.0-124-gf9b68fc
+
+	* src/account.c
+	* src/etpan/imap-thread.c
+	* src/gtk/logwindow.c
+	* src/imap.c
+	* src/pop.c
+	* src/prefs_account.c		
+		in the UI replace 'POP3' with 'POP' and 'IMAP4' with 'IMAP'
+
+2016-10-25  [Paul] 3.14.0-123-g59e8c1a
+
+	* src/mainwindow.c		
+		and another 'SSL' to 'SSL/TLS'
+
+2016-10-25  [Paul] 3.14.0-122-ga87b489
+
+	* src/wizard.c		
+		more 'SSL' to 'SSL/TLS'
+
+2016-10-25  [Paul] 3.14.0-121-g484ab8c
+
+	* src/gtk/sslcertwindow.c
+	* src/plugins/rssyl/rssyl_feed_props.c
+	* src/plugins/rssyl/rssyl_prefs.c
+	* src/plugins/vcalendar/vcal_prefs.c
+	* src/ssl_manager.c		
+		more 'SSL' to 'SSL/TLS'
+
+2016-10-25  [Paul] 3.14.0-120-g112b21d
+
+	* src/account.c
+	* src/addressbook.c
+	* src/common/session.c
+	* src/common/smtp.c
+	* src/common/socket.c
+	* src/common/ssl.c
+	* src/editldap.c
+	* src/etpan/imap-thread.c
+	* src/imap.c
+	* src/inc.c
+	* src/ldapctrl.c
+	* src/ldapserver.c
+	* src/news.c
+	* src/plugins/managesieve/managesieve.c
+	* src/plugins/managesieve/sieve_prefs.c
+	* src/pop.c
+	* src/prefs_account.c
+	* src/send_message.c
+	* src/wizard.c		
+		rename SSL to SSL/TLS  Using just 'TLS' is ambiguous. Sometimes it
+		refers to encrypted connection with TLSv1.0/1.1/1.2, sometimes it
+		refers to STARTTLS command. So be more specific about what is what. 
+		Patch by Christian Hesse, with some modifications
+
+2016-10-25  [Paul] 3.14.0-119-g5f01319
+
+	* src/summary_search.c
+	* src/summaryview.c
+	* src/summaryview.h		
+		make /View/Go to/... respect the always_show_msg option, and refactor
+		a bit
+
+2016-10-22  [wwp] 3.14.0-118-gdd8c448
+
+	* src/plugins/vcalendar/vcal_folder.c
+	* src/plugins/vcalendar/vcal_manager.c
+	* src/plugins/vcalendar/vcal_manager.h
+	* src/plugins/vcalendar/vcalendar.c
+	* src/textview.c		
+		While we're at it, fix typos like prefered occurences in variable
+		names.
+
+2016-10-22  [Ricardo Mones] 3.14.0-117-g8db8d39
+
+	* src/plugins/notification/gtkhotkey/gtk-hotkey-key-file-registry.c		
+		Fix typo (thanks lintian.d.o!)
+
+2016-10-18  [Ricardo Mones] 3.14.0-116-g53ea6f8
+
+	* src/plugins/libravatar/libravatar_image.c		
+		Fix resource leak and missing return
+
+2016-10-17  [Ricardo Mones] 3.14.0-115-ge62c01e
+
+	* src/plugins/libravatar/Makefile.am
+	* src/plugins/libravatar/libravatar.c
+	* src/plugins/libravatar/libravatar_image.c
+	* src/plugins/libravatar/libravatar_image.h		
+		Libravatar: refactor image retrieval  And use a synchronous thread
+		for fetching, in preparation of a future asynchronous fetching.
+		Thanks Andrej for the ideas.
+
+2016-10-11  [Pawel Pekala] 3.14.0-114-gabbf2f8
+
+	* configure.ac		
+		Don't check for encrypt() on FreeBSD, it's not required to build.
+		Recently on 12-CURRENT this function was removed completly making
+		configure script fail.
+
+2016-10-11  [Andrej Kacian] 3.14.0-113-gb963781
+
+	* src/editldap.c		
+		Fix typo from commit 63e19c6.
+
+2016-10-11  [Andrej Kacian] 3.14.0-112-g341d01e
+
+	* src/gtk/w32_filesel.c		
+		Fix wrong argument order in Windows file choosers.
+
+2016-10-10  [Andrej Kacian] 3.14.0-111-g63e19c6
+
+	* src/editldap.c		
+		Change mention of "mydomain.com" to "example.org".  Fixes bug #3712.
+
+2016-10-10  [Andrej Kacian] 3.14.0-110-g0fec6a0
+
+	* src/compose.c		
+		Improve plural handling of a file insert string.  Fixes bug #3711.
+
+2016-10-05  [Ricardo Mones] 3.14.0-109-g73ba30d
+
+	* src/prefs_account.c		
+		Fix bug #3705: active account Mail Address corrupted…  …when
+		address in Message-ID is used
+
+2016-10-04  [Ricardo Mones] 3.14.0-108-g12ab4c1
+
+	* src/common/hooks.c		
+		Fix a couple of typos
+
+2016-10-03  [Ricardo Mones] 3.14.0-107-g9470e63
+
+	* src/folder.c
+	* src/mainwindow.c
+	* src/mainwindow.h		
+		Fix #3014: The icon for folder drafts with hide…  …read messages
+		is the same as when not hidden  Fix disables hiding thread/messages
+		options in draft folders, hence hrm mode icons are not required for
+		them. Values already set for these options in draft folders are also
+		ignored.  Many thanks to Andrej and Paul for their feedback on this
+		one.
+
+2016-10-02  [Andrej Kacian] 3.14.0-106-ga48bc28
+
+	* src/compose.c		
+		Removed a superfluous debug_print() call.
+
+2016-10-02  [Andrej Kacian] 3.14.0-105-g8eb1faa
+
+	* src/compose.c		
+		Remove useless code from e22cbed.  References header was already
+		being honored in drafts.
+
+2016-10-01  [Andrej Kacian] 3.14.0-104-ge22cbed
+
+	* src/compose.c		
+		Do not add Message-ID for draft, unless it already has one.  We now
+		add a Message-ID header only when queuing a message, and we honor
+		existing Message-ID and References headers in drafts, if there are
+		any.
+
+2016-10-01  [Paul] 3.14.0-103-g3835a3a
+
+	* src/pixmaps/claws_mail_icon_64.xpm		
+		fix pixmap  fixes "initialization from incompatible pointer type"
+		warning
+
+2016-10-01  [Andrej Kacian] 3.14.0-102-g41064e4
+
+	* src/plugins/notification/notification_popup.c
+	* src/plugins/vcalendar/vcal_meeting_gtk.c		
+		Fix some harmless compiler warnings.  Some variables in
+		notification_popup.c were peeking out of their ifdefs, and I forgot
+		to remove an unused variable in vcal_meeting_gtk.c in my commit
+		8d93e8c.
+
+2016-10-01  [Andrej Kacian] 3.14.0-101-g8d93e8c
+
+	* src/common/utils.c
+	* src/common/utils.h
+	* src/compose.c
+	* src/messageview.c
+	* src/plugins/vcalendar/vcal_manager.c
+	* src/plugins/vcalendar/vcal_meeting_gtk.c
+	* src/plugins/vcalendar/vcalendar.c
+	* src/prefs_account.c
+	* src/prefs_account.h		
+		Make Message-ID string generation less confusing.  Instead of having
+		to prepare one part, then second part in advance and pass them to
+		generate_msgid() which does its own voodoo with them, we now just
+		pass a pointer to PrefsAccount to prefs_account_generate_msgid(), and
+		it does all of it on its own, returning pointer to a newly allocated
+		string.
+
+2016-09-29  [Holger Berndt] 3.14.0-100-g437668c
+
+	* configure.ac
+	* src/plugins/notification/Makefile.am
+	* src/plugins/notification/notification_indicator.c
+	* src/plugins/notification/notification_indicator.h
+	* src/plugins/notification/notification_plugin.c
+	* src/plugins/notification/notification_prefs.c		
+		Notification plugin: Port from libindicate to unity/messaging menu 
+		This is a slightly modified version of the patch from Sebastien Noel,
+		fixes bug #2665
+
+2016-09-28  [Holger Berndt] 3.14.0-99-g8dc0092
+
+	* src/plugins/gdata/cm_gdata_contacts.c		
+		GData plugin: Refresh auth token periodically  Fixes bug #3638
+
+2016-09-28  [Holger Berndt] 3.14.0-98-g86e01da
+
+	* src/plugins/gdata/cm_gdata_contacts.c		
+		GData plugin: Make global data static
+
+2016-09-29  [Ricardo Mones] 3.14.0-97-g878fcae
+
+	* src/plugins/clamd/clamav_plugin.c
+	* src/plugins/clamd/clamav_plugin_gtk.c		
+		Use a spinbutton for port number also in clamd  Default value is now
+		0 instead of an empty string.
+
+2016-09-29  [Ricardo Mones] 3.14.0-96-gaf11391
+
+	* src/plugins/vcalendar/vcal_prefs.c		
+		Use hours/minutes UI for vcalendar alert time
+
+2016-09-28  [Holger Berndt] 3.14.0-95-g3ffc699
+
+	* src/plugins/gdata/cm_gdata_contacts.c		
+		GData plugin: Unify indent accross file
+
+2016-09-26  [Paul] 3.14.0-94-ge070e40
+
+	* manual/advanced.xml
+	* src/compose.c
+	* src/prefs_common.c
+	* src/prefs_common.h		
+		add hidden pref 'reqrite_first_from'  '0' or '1'. This works around a
+		limitation of some servers with 'overly-liberal parsers'. When this
+		is turned on and the Content- Transfer-Encoding is set to 8bit or
+		7bit, in a message body starting with 'From ' the 'From ' will become
+		'=46rom ' and the Content-Transfer-Encoding will be changed to
+		Quoted-Printable. When it is turned off no such modification will be
+		made but it is very likely that an MTA will convert the 'From ' to
+		'>From '. See RFC 4155 for further details. Default value is '1',
+		turned on.
+
+2016-09-25  [Andrej Kacian] 3.14.0-93-g244b9ca
+
+	* src/common/utils.c		
+		Change home directory fallback to "C:\Claws-mail" on Windows.  It is
+		unlikely ever to be used, since CSIDL_APPDATA special folder is
+		guaranteed to be defined, but still...
+
+2016-09-25  [Andrej Kacian] 3.14.0-92-g94fb81e
+
+	* src/mh.c		
+		Fix absolute path detection in mh_create_tree() on Windows.
+
+2016-09-23  [Ricardo Mones] 3.14.0-91-g20ece29
+
+	* src/plugins/rssyl/rssyl.c		
+		Enable keeping old items by default  Be more conservative towards
+		feed data to avoid unwanted and unrecoverable loss of items.  Users
+		which don't want to store old items can easily disable this in feed
+		preferences and also remove obsolete items with the “Trim”
+		button.
+
+2016-09-23  [wwp] 3.14.0-90-g0ebf0a0
+
+	* src/prefs_actions.c
+	* src/prefs_filtering.c
+	* src/prefs_filtering_action.c
+	* src/prefs_matcher.c
+	* src/prefs_template.c
+	* src/prefs_toolbar.c		
+		Use Delete button instead of Remove (tooltips and other places
+		already talk about deletion) in prefs dialogs. Reassign some keyboard
+		hotkeys accordingly, 'e' for Delete.
+
+2016-09-23  [wwp] 3.14.0-89-g0f33f4b
+
+	* src/plugins/vcalendar/plugin.c
+	* src/plugins/vcalendar/vcal_folder.c
+	* src/plugins/vcalendar/vcal_prefs.c		
+		Normalize Webcal name capitalization everywhere (instead of WebCal,
+		webCal, webcal). Rephrase a bit a confirmation dialog to talk about
+		subscription instead of folder.
+
+2016-09-22  [Andrej Kacian] 3.14.0-88-g3a5f7d5
+
+	* src/gtk/w32_filesel.c		
+		Better handle NULL path arguments in w32_filesel.c  Fixes bug #3697.
+
+2016-09-20  [Ricardo Mones] 3.14.0-87-g2eea744
+
+	* src/common/utils.c
+	* src/common/utils.h		
+		Remove unused function
+
+2016-09-20  [Ricardo Mones] 3.14.0-86-g41fd672
+
+	* src/main.c		
+		Do not abuse macro for debugging
+
+2016-09-18  [Andrej Kacian] 3.14.0-85-ga05eeae
+
+	* src/common/socket.h
+	* src/common/ssl.c
+	* src/common/ssl.h		
+		Fix using client TLS certificates for GnuTLS 3.0 and up.  3.0
+		introduced new API for setting client certificates,
+		gnutls_certificate_set_retrieve_function2().  This fixes bug #3684.
+
+2016-09-17  [Andrej Kacian] 3.14.0-84-g479b9dc
+
+	* src/imap.c		
+		Remove an unused, mistyped ifdef in imap.c.
+
+2016-09-16  [Ricardo Mones] 3.14.0-83-ga7e2030
+
+	* src/gtk/colorlabel.c		
+		Remove useless workaround  The problem is still happening with it,
+		see bug #3511
+
+2016-09-14  [Ricardo Mones] 3.14.0-82-gdd8aee8
+
+	* src/wizard.c		
+		Remove (obsolete) FSF address from welcome mail
+
+2016-09-14  [Andrej Kacian] 3.14.0-81-gd113e2d
+
+	* src/common/prefs.c		
+		Removed unused macro from prefs.c.
+
+2016-09-13  [Andrej Kacian] 3.14.0-80-ga2a3d29
+
+	* src/plugins/vcalendar/vcal_manager.c		
+		Yet more vcalendar varargs functions fixed for issue described in
+		d20742e.
+
+2016-09-13  [Andrej Kacian] 3.14.0-79-gc0dc565
+
+	* src/plugins/vcalendar/vcal_manager.c		
+		More fixes for vcalendar crash on 64-bit arch.  Same issue as in
+		commit d20742e, different place. This should be the last one, though.
+
+2016-09-13  [Ricardo Mones] 3.14.0-78-ga62bfbb
+
+	* src/pixmaps/linewrap.xpm
+	* src/pixmaps/linewrapcurrent.xpm		
+		Fix another two strangely sized buttons
+
+2016-09-12  [Ricardo Mones] 3.14.0-77-g93354c8
+
+	* src/textview.c		
+		Fix potential segfault  Syslog message was: [5473572.496127]
+		claws-mail[24080]: segfault at 22 ip 00000000005704ce sp
+		00007ffdf1dfcea0 error 4 in claws-mail[400000+34a000]  $ addr2line -e
+		/…/claws-mail 00000000005704ce /…/src/textview.c:837  More
+		details on: http://stackoverflow.com/questions/2179403
+
+2016-09-12  [Ricardo Mones] 3.14.0-76-g00ba843
+
+	* src/pixmaps/notice_error.xpm		
+		Adjust to our toolbar button size of 24x24
+
+2016-09-11  [Andrej Kacian] 3.14.0-75-g008fce7
+
+	* src/plugins/rssyl/rssyl_update_comments.c		
+		Fix an impossible crash to shut Coverity up.
+
+2016-09-10  [Andrej Kacian] 3.14.0-74-gafc83c6
+
+	* src/plugins/rssyl/rssyl_update_comments.c		
+		Fix a memory leak in rssyl_update_comments().
+
+2016-09-10  [Andrej Kacian] 3.14.0-73-g4accbf7
+
+	* configure.ac		
+		Do not ignore CFLAGS environment variable in configure.
+
+2016-09-10  [Andrej Kacian] 3.14.0-72-g42b0938
+
+	* src/plugins/rssyl/parse822.c
+	* src/plugins/rssyl/rssyl_add_item.c
+	* src/plugins/rssyl/rssyl_deleted.c
+	* src/plugins/rssyl/rssyl_update_comments.c		
+		A fix for commit b274c72.  Whatever FeedItem's ->data is pointing to
+		is being freed in feed_item_free() already.
+
+2016-09-10  [Andrej Kacian] 3.14.0-71-g6061cc3
+
+	* src/folderview.c
+	* src/summaryview.c		
+		Fix a memory leak when setting summaryview and folderview fonts.
+
+2016-09-10  [Andrej Kacian] 3.14.0-70-g720b9a5
+
+	* src/folder.c		
+		Fixed two memory leaks when creating folderitems.  The Folderitem's
+		"node" member is set to a new empty GNode in folder_item_new(), but
+		is later set to another newly allocated GNode.  This commit removes
+		the extra allocation in one case (folder_new()), and gets rid of the
+		original GNode in another case, where avoiding the second allocation
+		is impossible without completely rewriting the recursive folderitem
+		appending in folder_get_from_xml().
+
+2016-09-10  [Andrej Kacian] 3.14.0-69-gb274c72
+
+	* src/plugins/rssyl/parse822.c
+	* src/plugins/rssyl/rssyl_add_item.c
+	* src/plugins/rssyl/rssyl_deleted.c
+	* src/plugins/rssyl/rssyl_update_comments.c		
+		Fix memory leak when freeing RSSyl's FeedItem struct.
+
+2016-09-09  [Andrej Kacian] 3.14.0-68-gfbb619d
+
+	* src/passwordstore.c		
+		Fix memory leak in password store reading.
+
+2016-09-09  [Andrej Kacian] 3.14.0-67-ge6ae9fa
+
+	* src/folder.c		
+		Fix a memory leak in folder_register_class().
+
+2016-09-09  [Ricardo Mones] 3.14.0-66-g51481e4
+
+	* src/plugins/archive/libarchive_archive.c		
+		Fix potential out-of-bounds read
+
+2016-09-07  [Ricardo Mones] 3.14.0-65-g831b8da
+
+	* src/Makefile.am
+	* src/pixmaps/trash.xpm
+	* src/pixmaps/trash_close.xpm
+	* src/pixmaps/trash_close_hrm.xpm
+	* src/pixmaps/trash_close_hrm_mark.xpm
+	* src/pixmaps/trash_close_mark.xpm
+	* src/pixmaps/trash_hrm.xpm
+	* src/pixmaps/trash_hrm_mark.xpm
+	* src/pixmaps/trash_mark.xpm
+	* src/pixmaps/trash_open.xpm
+	* src/pixmaps/trash_open_hrm.xpm
+	* src/pixmaps/trash_open_hrm_mark.xpm
+	* src/pixmaps/trash_open_mark.xpm
+	* src/stock_pixmap.c		
+		Do not reuse pixmaps for theme icons  Otherwise theme authors may
+		have a hard time finding why an icon is not themed despite having
+		provided replacements for all existing xpm files.
+
+2016-09-06  [Ricardo Mones] 3.14.0-64-ga79bdb6
+
+	* src/Makefile.am
+	* src/pixmaps/search.xpm		
+		Remove another unused pixmap
+
+2016-09-05  [Ricardo Mones] 3.14.0-63-g02744e9
+
+	* src/Makefile.am
+	* src/pixmaps/claws-mail.xpm		
+		Remove unused pixmap  Not used in theme and it wasn't a Claws Mail
+		icon but other ancient thingy… :)
+
+2016-09-05  [Ricardo Mones] 3.14.0-62-ged7e898
+
+	* src/Makefile.am
+	* src/pixmaps/claws-mail_compose_logo.xpm
+	* src/pixmaps/claws-mail_icon.xpm
+	* src/pixmaps/claws-mail_icon_64.xpm
+	* src/pixmaps/claws-mail_logo-small.xpm
+	* src/pixmaps/claws-mail_logo.xpm
+	* src/pixmaps/claws_mail_compose_logo.xpm
+	* src/pixmaps/claws_mail_icon.xpm
+	* src/pixmaps/claws_mail_icon_64.xpm
+	* src/pixmaps/claws_mail_logo.xpm
+	* src/pixmaps/claws_mail_logo_small.xpm
+	* src/pixmaps/tray_newmail.offline.xpm
+	* src/pixmaps/tray_newmail_offline.xpm
+	* src/pixmaps/tray_newmarkedmail.offline.xpm
+	* src/pixmaps/tray_newmarkedmail_offline.xpm
+	* src/pixmaps/tray_nomail.offline.xpm
+	* src/pixmaps/tray_nomail_offline.xpm
+	* src/pixmaps/tray_unreadmail.offline.xpm
+	* src/pixmaps/tray_unreadmail_offline.xpm
+	* src/pixmaps/tray_unreadmarkedmail.offline.xpm
+	* src/pixmaps/tray_unreadmarkedmail_offline.xpm
+	* src/stock_pixmap.c		
+		Normalise theme icon names which were different
+
+2016-09-03  [Ricardo Mones] 3.14.0-61-g6809ce7
+
+	* src/prefs_folder_item.h		
+		Remove unused declaration
+
+2016-09-03  [Ricardo Mones] 3.14.0-60-g001f97e
+
+	* src/prefs_folder_item.c		
+		Add warning icon to warning message  Refactor warning creation code
+		into a single function.
+
+2016-09-02  [Andrej Kacian] 3.14.0-59-gb130471
+
+	* src/common/ssl.c		
+		Be more strict about minimum DH prime size for TLS connections. 
+		Since GnuTLS 3.1.7, this minimum size is dictated by the priority
+		string, and current (GnuTLS 3.3.0) "safe-enough" value is 1008 bits.
+		We set this minimum size explicitly for older GnuTLS versions.  Users
+		who are affected by this (their servers use DH prime smaller than
+		1008 bits can override this by using priority string starting with
+		the keyword "LEGACY". This keyword only works with GnuTLS 3.3.0 or
+		newer, however.
+
+2016-09-02  [Paul] 3.14.0-58-g49e55fb
+
+	* src/Makefile.am
+	* src/plugins/notification/Makefile.am		
+		fix `make dist`
+
+2016-09-02  [wwp] 3.14.0-57-g1b45074
+
+	* src/quote_fmt.c
+	* src/quote_fmt_lex.l
+	* src/quote_fmt_parse.y		
+		Templates: add a way to attach a file, 'attach_output' or 'A', file
+		whose absolute path+filename is the output of a command-line (it s a
+		mix of 'attach' and 'program'). The first line of the command-line
+		output is taken into account, trailing newline being stripped down.
+		Like 'attach', if the filename is not found or not accessible, CM
+		will raise an error. Like 'program', if the command-line fails, no
+		error raises but the standard output of CM shows it.
+
+2016-09-01  [Ricardo Mones] 3.14.0-56-gdb2ee15
+
+	* src/plugins/notification/notification_pixbuf.c
+	* .../notification/raw_claws_mail_logo_64x64.h		
+		Fix bug #2918: Notification Popup icon is hardcoded  Also fixes last
+		part of bug #3437 by removing the call to deprecated function
+		gdk_pixbuf_new_from_inline and not using a raw pixmap.
+
+2016-09-01  [Ricardo Mones] 3.14.0-55-gfcfeb30
+
+	* src/pixmaps/claws-mail_icon_64.xpm
+	* src/stock_pixmap.c
+	* src/stock_pixmap.h		
+		Add 64x64 icon version to stock pixmaps  Icon data purloined from
+		last patch of #3437 by Christian Hesse.
+
+2016-09-01  [Ricardo Mones] 3.14.0-54-g465eaba
+
+	* src/gtk/icon_legend.c		
+		Forgot to adjust default window size
+
+2016-08-31  [Ricardo Mones] 3.14.0-53-g8ea7183
+
+	* src/gtk/icon_legend.c		
+		Improve icon legend appearance a bit  Remove extra space and replace
+		scrolled window with a frame.
+
+2016-08-31  [Colin Leroy] 3.14.0-52-g6110e70
+
+	* src/editaddress.c
+	* src/etpan/imap-thread.c
+	* src/filtering.c
+	* src/gtk/gtkcmctree.c
+	* src/gtk/gtksctree.c
+	* src/mbox.c
+	* src/messageview.c
+	* src/mh.c		
+		Fix a few Coverity issues
+
+2016-08-31  [Colin Leroy] 3.14.0-51-gb794c27
+
+	* src/common/xmlprops.c		
+		Remove useless code
+
+2016-08-31  [Colin Leroy] 3.14.0-50-g9730a98
+
+	* src/addrindex.c		
+		Remove useless code
+
+2016-08-31  [Paul] 3.14.0-49-g371bbb5
+
+	* src/plugins/vcalendar/vcal_folder.c		
+		use file name for WebCal subscription folder name  also remove the
+		string length limit, which broke saving folder properties
+
+2016-08-31  [Ricardo Mones] 3.14.0-48-g673374a
+
+	* src/gtk/icon_legend.c		
+		Better alignment for icon legend columns  Reverts most of
+		c0abccd31d42122216e3d25341394cd85d949d9b.
+
+2016-08-30  [Paul] 3.14.0-47-gaf47784
+
+	* src/Makefile.am		
+		fix `make dist`
+
+2016-08-30  [Paul] 3.14.0-46-gc0abccd
+
+	* src/gtk/icon_legend.c		
+		place icons in 2 columns
+
+2016-08-30  [Paul] 3.14.0-45-g84ef551
+
+	* src/folderview.c
+	* src/pixmaps/dir_noselect_open_mark.xpm
+	* src/pixmaps/dir_subs_open_mark.xpm
+	* src/stock_pixmap.c
+	* src/stock_pixmap.h		
+		remove icons that will never be displayed
+
+2016-08-30  [Paul] 3.14.0-44-g9aeea1a
+
+	* src/gtk/icon_legend.c		
+		fix capitalisation
+
+2016-08-30  [Paul] 3.14.0-43-g6771436
+
+	* src/gtk/icon_legend.c		
+		add 'noselect' and 'subs-only' folder icons
+
+2016-08-30  [Paul] 3.14.0-42-g2729007
+
+	* src/gtk/icon_legend.c		
+		fix non-resizeable Icon Legend dialogue
+
+2016-08-30  [Paul] 3.14.0-41-g999c327
+
+	* src/Makefile.am
+	* src/foldersel.c
+	* src/folderview.c
+	* src/pixmaps/dir_noselect.xpm
+	* src/pixmaps/dir_noselect_close.xpm
+	* src/pixmaps/dir_noselect_close_mark.xpm
+	* src/pixmaps/dir_noselect_open.xpm
+	* src/pixmaps/dir_noselect_open_mark.xpm
+	* .../notification/notification_foldercheck.c
+	* src/stock_pixmap.c
+	* src/stock_pixmap.h		
+		implement the 4-state icons for 'noselect' folders
+
+2016-08-30  [Andrej Kacian] 3.14.0-40-g2032c91
+
+	* src/ldapupdate.c		
+		Fix NULL pointer dereference in LDAP lookup code.  Fixes bug #3027.
+
+2016-08-28  [Andrej Kacian] 3.14.0-39-g986e6f7
+
+	* src/ldapquery.c		
+		Fix crash on Windows when doing a LDAP search.
+
+2016-08-28  [Andrej Kacian] 3.14.0-38-g04456e3
+
+	* po/ca.po
+	* po/cs.po
+	* po/da.po
+	* po/de.po
+	* po/en_GB.po
+	* po/es.po
+	* po/fi.po
+	* po/fr.po
+	* po/he.po
+	* po/hu.po
+	* po/id_ID.po
+	* po/it.po
+	* po/nb.po
+	* po/nl.po
+	* po/pt_BR.po
+	* po/ru.po
+	* po/sk.po
+	* po/sv.po
+	* po/tr.po
+	* po/zh_TW.po
+	* src/compose.c
+	* src/gtk/filesel.c
+	* src/gtk/filesel.h
+	* src/gtk/w32_filesel.c		
+		Make filesel API more consistent.  One of the functions,
+		filesel_select_multiple_files_open(), was missing the path parameter.
+
+2016-08-27  [Andrej Kacian] 3.14.0-37-g1a39f25
+
+	* src/gtk/w32_filesel.c		
+		Refactor gtk/w32_filesel.c for better code reuse.
+
+2016-08-27  [Andrej Kacian] 3.14.0-36-g303c220
+
+	* src/gtk/w32_filesel.c		
+		Allow multiple file selection in Windows native file chooser.
+
+2016-08-27  [Paul] 3.14.0-35-gbfa546e
+
+	* src/Makefile.am
+	* src/folderview.c
+	* src/pixmaps/dir_subs_close.xpm
+	* src/pixmaps/dir_subs_close_mark.xpm
+	* src/pixmaps/dir_subs_open.xpm
+	* src/pixmaps/dir_subs_open_mark.xpm
+	* src/stock_pixmap.c
+	* src/stock_pixmap.h		
+		indicate IMAP mailboxes which show subs only with a green folder
+
+2016-08-26  [Paul] 3.14.0-34-g9582967
+
+	* src/common/ssl.c		
+		Add OpenBSD CA cert path.  From Edd Barrett via Daniel Jakots
+
+2016-08-26  [Paul] 3.14.0-33-g8128510
+
+	* tools/README		
+		maintain alphabetical ordering
+
+2016-08-26  [Paul] 3.14.0-32-g77aa92a
+
+	* tools/mew2claws-mail.pl
+	* tools/outlook2claws-mail.pl
+	* tools/tb2claws-mail
+	* tools/vcard2xml.py		
+		update location of addrbook sub-folder in address conversion scripts
+
+2016-08-25  [Ricardo Mones] 3.14.0-31-gb7315fa
+
+	* manual/es/advanced.xml		
+		Synchronize Spanish manual
+
+2016-08-25  [Andrej Kacian] 3.14.0-30-gd6d4958
+
+	* src/common/ssl.c		
+		Always set GnuTLS priority string.  Closes bug #3680.
+
+2016-08-24  [Andrej Kacian] 3.14.0-29-g6298f43
+
+	* src/prefs_account.c		
+		Handle password loading more safely in prefs_account.c  Inspired by
+		patch in bug #3678.
+
+2016-08-24  [Andrej Kacian] 3.14.0-28-g61b7a02
+
+	* src/gtk/gtkutils.h		
+		Do a basic check for widget validity in CLAWS_SET_TIP().  Inspired by
+		patch in bug #3678.
+
+2016-08-24  [Ricardo Mones] 3.14.0-27-ga22303c
+
+	* src/compose.c		
+		Fix bug #3515: Ctrl-Shift-X opens multiple external editors  This a
+		known GTK+ bug (passing keypresses of disabled menus) or a mising
+		feature (not providing a way to disable also keypresses).  See
+		https://bugzilla.gnome.org/show_bug.cgi?id=656158
+
+2016-08-24  [Andrej Kacian] 3.14.0-26-g569c7e1
+
+	* src/plugins/vcalendar/vcal_prefs.c		
+		Fix crash in vcalendar passwords handling on prefs save.
+
+2016-08-23  [Andrej Kacian] 3.14.0-25-g61bced3
+
+	* src/common/ssl.c		
+		Fix previous commit b88c772, use correct preprocessor directive.
+
+2016-08-23  [Andrej Kacian] 3.14.0-24-gb88c772
+
+	* src/common/ssl.c		
+		Do not explicitly disable SSLv3 if GnuTLS does it already.  Starting
+		with GnuTLS 3.4.0, SSL 3.0 is no longer included in the default
+		priorities list.
+
+2016-08-22  [Ricardo Mones] 3.14.0-23-gf4e8599
+
+	* manual/advanced.xml		
+		Document the new hidden preference 'hide_timezone'
+
+2016-08-22  [Ricardo Mones] 3.14.0-22-g3a89a27
+
+	* src/common/utils.c
+	* src/common/utils.h
+	* src/compose.c
+	* src/news.c
+	* src/prefs_common.c
+	* src/prefs_common.h		
+		Fix bug #2975: Implement setting -0000 timezone to hide sender
+		localtime  This adds a new hidden preference, namely 'hide_timezone',
+		that sets the timezone of date fields sent over the network to the
+		unknown timezone value as specified in RFC 5322 §3.3.  Default value
+		is false (i.e., send available timezone information).
+
+2016-08-21  [Andrej Kacian] 3.14.0-21-g8395c4c
+
+	* src/common/plugin.c		
+		Deduplicate string for plugins' block prefix in clawsrc.
+
+2016-08-21  [Andrej Kacian] 3.14.0-20-g89af524
+
+	* src/plugins/rssyl/libfeed/parser_atom10.c		
+		Fix NULL pointer dereference in Atom parser.  Closes bug #3676.
+
+2016-08-21  [Andrej Kacian] 3.14.0-19-g7734bcf
+
+	* src/plugins/rssyl/libfeed/parser.c		
+		Fix crash when an Atom feed's opening tag doesn't have xmlns
+		attribute.  Closes bug #3675.
+
+2016-08-19  [Andrej Kacian] 3.14.0-18-g7635e2f
+
+	* .../vcalendar/libical/libical/icalduration.c
+	* src/plugins/vcalendar/libical/libical/icaltime.c
+	* src/plugins/vcalendar/vcal_manager.c		
+		More fixes for parsing dates in vcalendar on Windows.  ...this time
+		without all the i18n updates.
+
+2016-08-19  [Andrej Kacian] 3.14.0-17-g3813793
+
+	* po/ca.po
+	* po/cs.po
+	* po/da.po
+	* po/de.po
+	* po/en_GB.po
+	* po/es.po
+	* po/fi.po
+	* po/fr.po
+	* po/he.po
+	* po/hu.po
+	* po/id_ID.po
+	* po/it.po
+	* po/nb.po
+	* po/nl.po
+	* po/pt_BR.po
+	* po/ru.po
+	* po/sk.po
+	* po/sv.po
+	* po/tr.po
+	* po/zh_TW.po
+	* .../vcalendar/libical/libical/icalduration.c
+	* src/plugins/vcalendar/libical/libical/icaltime.c
+	* src/plugins/vcalendar/vcal_manager.c		
+		Revert "More fixes for parsing dates in vcalendar on Windows."  This
+		reverts commit dc7438b9a2eb1e6f55bf1780310ddcc06160baa2.  Oops, I did
+		it again...
+
+2016-08-19  [Andrej Kacian] 3.14.0-16-gdc7438b
+
+	* po/ca.po
+	* po/cs.po
+	* po/da.po
+	* po/de.po
+	* po/en_GB.po
+	* po/es.po
+	* po/fi.po
+	* po/fr.po
+	* po/he.po
+	* po/hu.po
+	* po/id_ID.po
+	* po/it.po
+	* po/nb.po
+	* po/nl.po
+	* po/pt_BR.po
+	* po/ru.po
+	* po/sk.po
+	* po/sv.po
+	* po/tr.po
+	* po/zh_TW.po
+	* .../vcalendar/libical/libical/icalduration.c
+	* src/plugins/vcalendar/libical/libical/icaltime.c
+	* src/plugins/vcalendar/vcal_manager.c		
+		More fixes for parsing dates in vcalendar on Windows.
+
+2016-08-19  [Andrej Kacian] 3.14.0-15-gb848844
+
+	* src/plugins/vcalendar/vcal_manager.c
+	* src/procheader.c		
+		More support for pre-Epoch dates for Windows. 
+		get_rfc822_date_from_time_t() (vcalendar) procheader_date_parse()
+		(core)
+
+2016-08-18  [Andrej Kacian] 3.14.0-14-gc9c7295
+
+	* src/common/w32lib.h		
+		Removed fork() prototype from w32lib.h.  fork() is builtin in mingw.
+
+2016-08-18  [Andrej Kacian] 3.14.0-13-g53a6a5a
+
+	* configure.ac
+	* src/Makefile.am		
+		Set correct LDFLAGS for OS X.  Commit also simplifies LDFLAGS for
+		Windows, moving them from src/Makefile.am to configure.ac.  Closes
+		bug #3665.
+
+2016-08-18  [Andrej Kacian] 3.14.0-12-gf5fdc11
+
+	* src/common/pkcs5_pbkdf2.c		
+		Avoid usage of deprecated bcopy/bzero in pbkdf2 routine.
+
+2016-08-18  [Andrej Kacian] 3.14.0-11-g7e34491
+
+	* src/plugins/rssyl/libfeed/feed.c
+	* src/plugins/rssyl/libfeed/feed.h
+	* src/plugins/rssyl/libfeed/parser.c
+	* src/plugins/rssyl/rssyl_subscribe.c		
+		Few miscellaneous fixes for RSSyl.  Mostly for compiler warnings on
+		win64.
+
+2016-08-18  [Andrej Kacian] 3.14.0-10-g0a69220
+
+	* src/plugins/vcalendar/libical/libical/icaltime.c		
+		Use GDateTime instead of mktime() in vcalendar's libical.  On several
+		places, libical relies on mktime()'s undefined behavior for dates
+		before the Epoch - on Linux, it returns minus number of seconds
+		*until* epoch for such dates.  On Windows, mktime() returns -1, which
+		leads to code around it crashing, since there are almost no error
+		checks in libical.  We circumvent this by doing the needed
+		conversions via glib's GDateTime instead where needed.
+
+2016-08-17  [Ricardo Mones] 3.14.0-9-g33282d0
+
+	* src/messageview.c		
+		Fix regression: show simple text/calendar with plugin  Handling the
+		base case where the MIME part being looked up is directly passed as
+		function parameter was missing.
+
+2016-08-17  [Andrej Kacian] 3.14.0-8-g5b70872
+
+	* src/imap.c		
+		Fix a crash on IMAP login when using a password plugin.  Fixes bug
+		#3667.
+
+2016-08-15  [Andrej Kacian] 3.14.0-7-gd20742e
+
+	* src/plugins/vcalendar/vcal_folder.c
+	* src/plugins/vcalendar/vcal_manager.c
+	* src/plugins/vcalendar/vcal_meeting_gtk.c		
+		Fix potential crash in vcalendar's icalcomponent_vanew() on 64-bit
+		archs.  We need to pass the terminating zero cast to void*, because
+		size of void* is 8 bytes, while size of a literal 0 just 4 bytes. The
+		arguments are retrieved as void*, so without this void* cast, we're
+		taking four extra bytes belonging to whatever data is stored in
+		memory directly after our four-byte zero.
+
+2016-08-11  [Paul] 3.14.0-6-gdd7568a
+
+	* AUTHORS
+	* src/gtk/authors.h
+	* src/imap_gtk.c		
+		add missing semi-colon  spotted and patched by Ralf Bormann
+		<ralf.bormann@cs.uni-dortmund.de>
+
+2016-08-11  [Paul] 3.14.0-5-gc8e4fd1
+
+	* po/ru.po		
+		update ru.po  submitted by Mikhail Kurinnoi
+
+2016-08-11  [Ricardo Mones] 3.14.0-4-g9b4db07
+
+	* po/tr.po		
+		Fix bug #3666: Typos in Turkish translation  X-Patch-Thanks-To:
+		rypervenche <sub@ryper.org>
+
+2016-08-09  [Andrej Kacian] 3.14.0-3-g5fcfe9a
+
+	* src/plugins/vcalendar/libical/libical/icalrecur.c		
+		Fix a potential bug in vcalendar's libical.  Some compilers seem to
+		understand this construction as an empty for() cycle, followed by an
+		unrelated block enclosed in braces. We make sure the compiler does
+		what we want by putting the opening brace at the same line as for().
+
+2016-08-07  [Ricardo Mones] 3.14.0-2-ge48b739
+
+	* src/passwordstore.c		
+		Fix typo
+
+2016-08-07  [Paul] 3.14.0-1-g7e40ad7
+
+	* AUTHORS
+	* src/gtk/authors.h
+	* tools/claws.i18n.status.pl		
+		List the current Catalan translator rather than the previous one. 
+		Apologies, David!
+
+2016-08-07  [Paul] 3.14.0
+
+	* NEWS
+	* README
+	* RELEASE_NOTES		
+		for 3.14.0 release
+
+2016-08-07  [Paul] 3.13.2-226-g7d4d2c5
+
+	* AUTHORS
+	* configure.ac
+	* po/ca.po
+	* po/cs.po
+	* po/da.po
+	* po/de.po
+	* po/fi.po
+	* po/fr.po
+	* po/hu.po
+	* po/id_ID
+	* po/it.po
+	* po/nl.po
+	* po/pt_BR.po
+	* po/sk.po
+	* po/sv.po
+	* po/tr.po
+	* po/zh_TW.po
+	* src/gtk/authors.h
+	* tools/claws.i18n.status.pl		
+		update/add/disable translations  Updated: [ca]	Carles Tubio Terrón
+			<c@rles-tub.io> [cs] 	David Vachulka 		<david@konstrukce- cad.com>
+		[de]	Thomas Bellmann 	<ThomasBellmann@gmx.net> [fi]	Flammie Pirinen
+			<flammie@iki.fi> [fr]	Tristan Chabredier	<wwp@claws-mail.org> [hu]
+			Pader Rezso 		<rezso@rezso.net> [it]	Luigi Votta
+				<luigi.vtt@gmail.com> [nb]	Petter Adsen 		<petter@synth.no>
+		[nl]	Marcel Pol		<mpol@gmx.net> [pt_BR] Frederico Goncalves Guimaraes
+		<frederico@teia.bio.br> [ru]	Mikhail Kurinnoi
+			<viewizard@viewizard.com> [sk]	Slavko 			<slavino@slavino.sk>
+		[sv]	Andreas Rönnquist 	<gusnan@openmailbox.org> [tr] 	Numan
+		Demirdö?en 	<if.gnu.linux@gmail.com> [zh_TW]	Mark Chang
+				<mark.cyj@gmail.com>  Added: [da] 	Erik P. Olsen
+				<epodata@gmail.com> [id_ID]	MSulchan Darmawan 	<bleketux@gmail.com>
+		 Unmaintained: [lt]	Mindaugas Baranauskas	<embar@super.lt>
+
+2016-08-07  [Ricardo Mones] 3.13.2-225-gf2d84a5
+
+	* src/common/tlds.h		
+		Update list of TLDs for release
+
+2016-08-07  [Ricardo Mones] 3.13.2-224-gb24ed0c
+
+	* po/es.po		
+		Update Spanish translation for release
+
+2016-08-06  [Andrej Kacian] 3.13.2-223-gce7a92d
+
+	* src/gtk/w32_filesel.c		
+		Fix filesel_select_file_open_folder() for Win32.  The starting folder
+		needs to be set via the dialog callback function, as passing it as
+		pidlRoot merely "chroots" us in the starting folder, so the dialog
+		can't see anything above it.
+
+2016-08-05  [Paul] 3.13.2-222-gb0f7828
+
+	* claws-mail.desktop		
+		add Turkish translation to claws-mail.desktop
+
+2016-08-05  [Ricardo Mones] 3.13.2-221-gbc82ccd
+
+	* doc/man/claws-mail.1		
+		Add passwords file to manpage
+
+2016-08-01  [Paul] 3.13.2-220-gfd3b546
+
+	* src/password_gtk.c		
+		fix typo
+
+2016-08-01  [Andrej Kacian] 3.13.2-219-g465c34e
+
+	* src/common/session.c
+	* src/common/session.h
+	* src/common/smtp.c
+	* src/plugins/managesieve/managesieve.c
+	* src/pop.c		
+		Removed SessionMsgType enum and its use, since it is useless.  The
+		only user was session_send_msg(), which did nothing with its
+		SessionMsgType parameter.
+
+2016-08-01  [Andrej Kacian] 3.13.2-218-g4836dd9
+
+	* src/main.c		
+		Set correct config_version after first-run wizard finishes.  Patch by
+		Christian Hesse <mail at eworm de>.
+
+2016-08-01  [Andrej Kacian] 3.13.2-217-gf3e9981
+
+	* po/POTFILES.in		
+		Added recently added source files to POTFILES.in.
+
+2016-07-31  [Andrej Kacian] 3.13.2-216-g8fc7e7c
+
+	* src/password.c		
+		Remove an obsolete comment in password.c.
+
+2016-07-29  [Ricardo Mones] 3.13.2-215-gb453ee3
+
+	* src/passwordstore.c
+	* src/plugins/archive/libarchive_archive.c		
+		Remove more line breaks from g_warning()
+
+2016-07-29  [Ricardo Mones] 3.13.2-214-gadf0072
+
+	* src/avatars.c
+	* src/compose.c
+	* src/editaddress.c
+	* src/etpan/imap-thread.c
+	* src/etpan/nntp-thread.c
+	* src/gtk/gtkutils.c
+	* src/imap.c
+	* src/main.c
+	* src/mainwindow.c
+	* src/plugins/gdata/cm_gdata_contacts.c
+	* src/plugins/libravatar/libravatar_prefs.c
+	* src/plugins/pgpcore/passphrase.c
+	* src/plugins/pgpcore/select-keys.c
+	* src/plugins/pgpcore/sgpgme.c
+	* src/plugins/pgpinline/pgpinline.c
+	* src/plugins/pgpmime/pgpmime.c
+	* src/plugins/smime/smime.c
+	* src/plugins/vcalendar/vcal_dbus.c
+	* src/procmime.c
+	* src/summaryview.c		
+		Fix some debug messages and update headers
+
+2016-07-28  [Andrej Kacian] 3.13.2-213-gce7c6f5
+
+	* src/addressbook.c		
+		Only enable "New Book" context menu entry for internal addressbook. 
+		It was confusing to have it active on e.g. LDAP server interface,
+		when it really only adds a new XML addressbook.  Also, do not enable
+		the "New" button when right-clicking the XML addressbook interface
+		line, as the button doesn't do anything useful for interfaces.
+
+2016-07-28  [Andrej Kacian] 3.13.2-212-gb848e66
+
+	* src/addressbook.c		
+		Fix sensitivity of "Delete book" menu entries in addressbook.  Now
+		it's possible to delete a read-only address datasource via popup
+		menu.
+
+2016-07-28  [Ricardo Mones] 3.13.2-211-g5164fae
+
+	* src/common/plugin.c		
+		Remove also unused struct member
+
+2016-07-28  [Andrej Kacian] 3.13.2-210-g8959d16
+
+	* src/common/plugin.c
+	* src/common/plugin.h
+	* src/password.c		
+		Remove the (now unused) master_passphrase_change plugin function.
+
+2016-07-28  [Andrej Kacian] 3.13.2-209-gca90fcd
+
+	* src/main.c		
+		Do not run config update routine on first run.  The newly created
+		configuration is already up to date.
+
+2016-07-27  [Paul] 3.13.2-208-g6dba6cd
+
+	* src/addressbook.c		
+		Improve label
+
+2016-07-27  [Ricardo Mones] 3.13.2-207-g9e4a326
+
+	* src/common/defs.h
+	* src/main.c
+	* src/prefs_migration.c
+	* src/prefs_migration.h		
+		Handle configuration versions from the future
+
+2016-07-23  [Andrej Kacian] 3.13.2-206-g4d766fb
+
+	* src/plugins/rssyl/rssyl_subscribe.c		
+		Embarrassing typo fix in rssyl_subscribe().
+
+2016-07-23  [Andrej Kacian] 3.13.2-205-gd0f52e9
+
+	* src/common/utils.c
+	* src/common/utils.h
+	* src/inc.c
+	* src/mimeview.c
+	* src/plugins/acpi_notifier/acpi_notifier.c
+	* src/plugins/bogofilter/bogofilter.c
+	* src/plugins/bsfilter/bsfilter.c
+	* src/plugins/bsfilter/claws.def
+	* src/plugins/fancy/claws.def
+	* src/plugins/notification/notification_command.c
+	* src/plugins/pdf_viewer/poppler_viewer.c
+	* src/plugins/spamassassin/spamassassin.c
+	* src/plugins/vcalendar/vcal_folder.c
+	* src/textview.c		
+		Added working_directory parameter to execute_command_line()  It gets
+		passed as a first argument to g_spawn_sync/async. Mostly NULL, since
+		that's what was passed until now, but bsfilter plugin on Windows
+		needs to change to installation directory (startup_dir).
+
+2016-07-23  [Andrej Kacian] 3.13.2-204-ge66778e
+
+	* src/plugins/att_remover/claws.def
+	* src/plugins/rssyl/claws.def
+	* src/plugins/vcalendar/claws.def		
+		Updated plugins' claws.def files for win32 build.
+
+2016-07-23  [Paul] 3.13.2-203-gce6fea0
+
+	* src/prefs_message.c		
+		replace another: "pixel(s)" -> "pixels"
+
+2016-07-23  [Paul] 3.13.2-202-g1d75fbd
+
+	* src/prefs_message.c		
+		another one (see last commit)
+
+2016-07-23  [Paul] 3.13.2-201-g79d0dc2
+
+	* src/imap.c
+	* src/news.c
+	* src/plugins/mailmbox/plugin_gtk.c
+	* src/plugins/notification/notification_prefs.c
+	* src/plugins/pgpcore/prefs_gpg.c
+	* src/plugins/rssyl/rssyl_feed_props.c
+	* src/plugins/rssyl/rssyl_prefs.c
+	* src/plugins/spamassassin/spamassassin.c
+	* src/plugins/spamassassin/spamassassin_gtk.c
+	* src/plugins/vcalendar/vcal_meeting_gtk.c
+	* src/prefs_other.c
+	* src/prefs_summaries.c		
+		standardise singlular/plural mix on labels
+
+2016-07-23  [Ricardo Mones] 3.13.2-200-gf6769c0
+
+	* src/prefs_receive.c		
+		Use current style of preferences for time fields
+
+2016-07-23  [Ricardo Mones] 3.13.2-199-g60b6b8e
+
+	* src/prefs_receive.c		
+		Make label more readable
+
+2016-07-23  [Ricardo Mones] 3.13.2-198-g72a45f9
+
+	* src/inc.c
+	* src/prefs_common.c
+	* src/prefs_common.h
+	* src/prefs_receive.c		
+		Update copyright headers for previous commit
+
+2016-07-23  [Ricardo Mones] 3.13.2-197-gbc779dc
+
+	* src/inc.c
+	* src/prefs_common.c
+	* src/prefs_common.h
+	* src/prefs_migration.c
+	* src/prefs_receive.c		
+		Fix bug #2176: autochk_interval granularity is low  This also fixes
+		Debian bug “Please increase mail auto check period.” See:
+		https://bugs.debian.org/712758  Former bug wanted sub-minute
+		granularity and latter the opposite: just check a few times a day, so
+		this allows user to specify also hours and seconds in addition to
+		existing minutes to address both requests.  Checking range was from 1
+		minute to 1 hour 40 minutes and now is extended to a range from 10
+		seconds to 100 hours minus one second.  Default for new
+		configurations is preserved (10 minutes).  Configuration version is
+		raised to 2 for migrating existing values from minutes to seconds.
+
+2016-07-22  [Andrej Kacian] 3.13.2-196-g00f51a6
+
+	* src/news_gtk.c
+	* src/plugins/att_remover/att_remover.c		
+		Remove last outside gtk_cmclist_freeze/thaw for
+		summaryview&folderview ctrees.  More code maintenance to isolate
+		summaryview and folderview widgets' internals behind an API.
+
+2016-07-22  [Paul] 3.13.2-195-g5f96d48
+
+	* src/prefs_send.c		
+		remove unnecessary 'Encoding' frame
+
+2016-07-22  [Paul] 3.13.2-194-gab032e2
+
+	* src/mainwindow.c
+	* src/messageview.c
+	* src/prefs_other.c		
+		Remove unneeded 'Other' from View/Go to/Other folder...
+
+2016-07-22  [Ricardo Mones] 3.13.2-193-gef0eeb2
+
+	* src/prefs_send.c		
+		Reorganise send options a bit  Also remove '(Recommended)' from
+		selector, as that's already mentioned in the tooltip.
+
+2016-07-21  [Andrej Kacian] 3.13.2-192-gdbad296
+
+	* src/folderview.c
+	* src/folderview.h
+	* src/imap_gtk.c
+	* src/mainwindow.c
+	* src/mh_gtk.c
+	* src/news_gtk.c
+	* src/plugins/mailmbox/plugin_gtk.c
+	* src/plugins/rssyl/rssyl_cb_menu.c
+	* src/plugins/vcalendar/vcal_folder.c
+	* src/prefs_folder_item.c		
+		Further improve API isolation of folderview.  This commit gets rid of
+		all outside access to "opened" and "selected" struct members, and lot
+		of outside access to "ctree" member.  Additional work still needed.
+		:)
+
+2016-07-21  [Andrej Kacian] 3.13.2-191-g96ca00e
+
+	* src/folderview.c
+	* src/folderview.h
+	* src/main.c
+	* src/mainwindow.c
+	* src/summaryview.c
+	* src/toolbar.c		
+		Use folderview_grab_focus() outside of folderview.c.
+
+2016-07-21  [Andrej Kacian] 3.13.2-190-g4306c9e
+
+	* src/folderview.c
+	* src/folderview.h
+	* src/main.c
+	* src/plugins/rssyl/rssyl_feed.c		
+		Use folderview_freeze/thaw() functions outside of folderview.c. 
+		These are modeled after summary_freeze/thaw().
+
+2016-07-21  [Andrej Kacian] 3.13.2-189-g574ec56
+
+	* src/main.c		
+		Make exit_claws() use folderview API and not reach inside _FolderView
+		struct.
+
+2016-07-20  [Andrej Kacian] 3.13.2-188-g3ed994a
+
+	* src/addr_compl.c
+	* src/addressadd.c
+	* src/addressbook.c
+	* src/addressbook_foldersel.c
+	* src/editaddress.c
+	* src/foldersel.c
+	* src/folderview.c
+	* src/gtk/about.c
+	* src/gtk/gtkutils.c
+	* src/gtk/icon_legend.c
+	* src/importldif.c
+	* src/inc.c
+	* src/main.c
+	* src/mainwindow.c
+	* src/mimeview.c
+	* src/noticeview.c
+	* .../notification/notification_foldercheck.c
+	* src/plugins/notification/notification_pixbuf.c
+	* src/plugins/pdf_viewer/poppler_viewer.c
+	* src/prefs_themes.c
+	* src/prefs_toolbar.c
+	* src/stock_pixmap.c
+	* src/stock_pixmap.h
+	* src/summaryview.c
+	* src/toolbar.c
+	* src/wizard.c		
+		Remove unused GtkWidget* argument in stock_pix* functions. 
+		stock_pixmap_widget() stock_pixmap_widget_with_overlay()
+		stock_pixbuf_gdk()
+
+2016-07-20  [Ricardo Mones] 3.13.2-187-gbbae17b
+
+	* src/pixmaps/down_arrow.xpm
+	* src/pixmaps/up_arrow.xpm		
+		Restore also size of toolbar arrows  Thanks Paul for pointing those
+		out!
+
+2016-07-20  [Ricardo Mones] 3.13.2-186-g6b72b03
+
+	* src/pixmaps/trash_btn.xpm		
+		Restore size of toolbar trash button  Default is 24x24 for toolbar
+		buttons but this was unintentionally shrinked more than a decade ago.
+
+2016-07-20  [Ricardo Mones] 3.13.2-185-gfbba865
+
+	* src/mh.c		
+		Fix warning about what directory cannot be open
+
+2016-07-19  [Andrej Kacian] 3.13.2-184-g6274ab0
+
+	* src/folderview.c		
+		Fix up previous commit.  Move the update_fonts check earlier, before
+		the last_*font pointers get modified.
+
+2016-07-19  [Andrej Kacian] 3.13.2-183-g28fe219
+
+	* src/folderview.c		
+		Do not repopulate folderview after account prefs save.  The only
+		reason to repopulate is if user's chosen fonts change, and that
+		cannot happen in account prefs.
+
+2016-07-18  [Andrej Kacian] 3.13.2-182-g6bc99f8
+
+	* src/prefs_account.c		
+		Remove APOP and RPOP also from account prefs.  This fixes up previous
+		commit, 358e811.
+
+2016-07-15  [Andrej Kacian] 3.13.2-181-g358e811
+
+	* src/inc.c
+	* src/prefs_account.c
+	* src/prefs_account.h
+	* src/prefs_common.h
+	* src/prefs_migration.c
+	* src/send_message.c		
+		Remove obsolete A_APOP and A_RPOP account protocols. 
+		CLAWS_CONFIG_VERSION bumped to 1.
+
+2016-07-14  [Andrej Kacian] 3.13.2-180-g3b5b4f7
+
+	* src/Makefile.am
+	* src/main.c
+	* src/prefs_common.c
+	* src/prefs_common.h
+	* src/prefs_migration.c
+	* src/prefs_migration.h		
+		Added config versioning.  This allows us to change meaning of
+		existing preferences, without losing or mangling user data.
+		Controlled by a common pref "config_version", which is checked on
+		startup after reading all configuration. If this version is lower
+		than what is defined in CLAWS_CONFIG_VERSION, an upgrade is done
+		incrementally, from one version to the next and to the next, so that
+		all affected preferences are adjusted.
+
+2016-07-14  [Ricardo Mones] 3.13.2-179-g74b625c
+
+	* AUTHORS
+	* src/gtk/authors.h		
+		Update lists of authors
+
+2016-07-14  [Ricardo Mones] 3.13.2-178-g4bee63a
+
+	* src/codeconv.c		
+		Fix bug #3573: Out of bounds read in macro LBREAK_IF_REQUIRED  Thanks
+		Hanno Boeck for the patch!
+
+2016-07-13  [Andrej Kacian] 3.13.2-177-g5e02bd9
+
+	* src/plugins/pgpcore/sgpgme.c		
+		When generating a PGP keypair, only ask for passphrase with gpg1. 
+		Also erase all copies of an entered passphrase from memory when done.
+		Closes bug #3658.
+
+2016-07-12  [Andrej Kacian] 3.13.2-176-ge454dd8
+
+	* src/plugins/pgpcore/sgpgme.c		
+		Simplify handling of gpg_ask_create_key pref.
+
+2016-07-11  [Andrej Kacian] 3.13.2-175-g88d81f3
+
+	* src/gtk/w32_filesel.c		
+		Fix filesel dialog with filter for Win32.  g_utf8_to_utf16() always
+		stops on first null byte, so we have to construct the
+		"filter\0filter\0\0" string for GetOpenFileName() manually.
+
+2016-07-10  [Andrej Kacian] 3.13.2-174-gcca1d5d
+
+	* src/plugins/pgpcore/pgp_viewer.c		
+		Added --batch option to manual gpg executable calls.  This, together
+		with --no-tty, is to make these calls really non-interactive, and
+		helps against the calls hanging on Windows occasionally.
+
+2016-07-10  [Andrej Kacian] 3.13.2-173-g38a69f6
+
+	* src/plugins/pgpcore/claws.def
+	* src/plugins/pgpcore/sgpgme.c		
+		Made exporting GPG key to keyserver work on Windows.
+
+2016-07-07  [Andrej Kacian] 3.13.2-172-g6a20b48
+
+	* src/plugins/notification/claws.def		
+		Updated claws.def file for win32 build of notification plugin.
+
+2016-07-05  [Ricardo Mones] 3.13.2-171-g16129f3
+
+	* manual/es/plugins.xml		
+		Sync Spanish manual
+
+2016-07-05  [Ricardo Mones] 3.13.2-170-gdc8db42
+
+	* manual/plugins.xml		
+		Fix #3653: document plugin path configuration
+
+2016-07-04  [Ricardo Mones] 3.13.2-169-gfaf9c1d
+
+	* manual/es/advanced.xml		
+		Update Spanish manual
+
+2016-07-04  [Ricardo Mones] 3.13.2-168-gcda0657
+
+	* src/plugins/pgpcore/sgpgme.c		
+		Add forgotten block delimiters  Thanks Paul for noticing!
+
+2016-07-04  [Paul] 3.13.2-167-g2011344
+
+	* src/compose.c		
+		fix bug 2518, ' "Reply-All" message from NNTP-account does not
+		contain CC'ed correspondents'
+
+2016-07-04  [Paul] 3.13.2-166-gcdb37a1
+
+	* src/compose.c		
+		include Reply-To value when using 'reply to all'
+
+2016-07-04  [Paul] 3.13.2-165-g92c1a19
+
+	* manual/advanced.xml
+	* src/summaryview.c		
+		make 'next_on_delete' hidden pref apply after trashing or moving a
+		msg in addition to deleting a msg  fixes bug #3600. document this
+		hidden pref also
+
+2016-07-04  [Ricardo Mones] 3.13.2-164-gb2651d9
+
+	* src/plugins/pgpcore/prefs_gpg.c
+	* src/plugins/pgpcore/sgpgme.c		
+		Warn on unsuccessful gpgme_set_engine_info calls
+
+2016-07-04  [Paul] 3.13.2-163-gfd6e308
+
+	* src/plugins/pgpcore/pgp_viewer.c
+	* src/plugins/pgpcore/sgpgme.c
+	* src/plugins/pgpcore/sgpgme.h		
+		modify 61f7c3c5e to catch another hardcoded gpg call
+
+2016-07-03  [wwp] 3.13.2-162-g6295af1
+
+	* src/plugins/notification/notification_trayicon.c		
+		notification plug-in: skip SMTP-only accounts when building the 'Get
+		mail from account' menu.
+
+2016-07-02  [Pawel Pekala] 3.13.2-161-ga5fb6aa
+
+	* src/account.c
+	* src/addressbook.c
+	* src/gtk/logwindow.c
+	* src/gtk/pluginwindow.c
+	* src/message_search.c
+	* src/sourcewindow.c
+	* src/summary_search.c		
+		Revert "Place dialogs on center of main window."  This reverts commit
+		cb67730a260a491ae380fd928d8ca673200972b0.
+
+2016-07-02  [Pawel Pekala] 3.13.2-160-gcb67730
+
+	* src/account.c
+	* src/addressbook.c
+	* src/gtk/logwindow.c
+	* src/gtk/pluginwindow.c
+	* src/message_search.c
+	* src/sourcewindow.c
+	* src/summary_search.c		
+		Place dialogs on center of main window. Most window managers place
+		these dialogs in some weird positions making interacting with them
+		unwieldy. Windows is biggest offender here putting things around left
+		top corner of the screen.
+
+2016-06-30  [wwp] 3.13.2-159-gbc2c1d1
+
+	* src/plugins/notification/notification_trayicon.c		
+		Add  'Get mail from account..' to notification plugin's trayicon
+		menu.
+
+2016-06-27  [Charles Lehner] 3.13.2-158-g9854220
+
+	* src/plugins/vcalendar/vcal_manager.c		
+		Allocate quoted-printable output buffer on heap
+
+2016-06-27  [Charles Lehner] 3.13.2-157-g18292e3
+
+	* src/plugins/vcalendar/vcal_manager.c		
+		Handle ical lines longer than 256 bytes
+
+2016-06-24  [Charles Lehner] 3.13.2-156-g8c8e1a9
+
+	* src/html.c
+	* src/html.h		
+		Indent html in blockquotes
+
+2016-06-14  [Charles Lehner] 3.13.2-155-g145bcd5
+
+	* src/html.c		
+		Line break after <dd>
+
+2016-06-16  [Ricardo Mones] 3.13.2-154-g804af9b
+
+	* src/common/utils.c		
+		Fix bug #3652 “warning: ordered comparison of pointer…”
+
+2016-06-09  [Pawel Pekala] 3.13.2-153-gaafdc44
+
+	* src/plugins/notification/notification_trayicon.c		
+		Implement focused widget saving between iconify/deiconify events in
+		trayicon notification. Without this focus is lost on deiconify and
+		this can be painful to keyboard users. This is similar to my old work
+		on trayicon plugin I've done in the past.
+
+2016-06-08  [Pawel Pekala] 3.13.2-152-g3fa7a0c
+
+	* configure.ac		
+		Fix python plugin test for BSD family, dlopen(3) on those systems is
+		part of libc library and linking to nonexistent libdl will fail. 
+		Tested on FreeBSD 11-Current, Debian 8
+
+2016-06-07  [Ricardo Mones] 3.13.2-151-ge4df87a
+
+	* tools/Makefile.am		
+		Install new script also
+
+2016-06-07  [Ricardo Mones] 3.13.2-150-g9bf1015
+
+	* tools/cm-reparent.pl		
+		And more documentation
+
+2016-06-07  [Ricardo Mones] 3.13.2-149-g41bfb4b
+
+	* tools/cm-reparent.pl		
+		Improve script documentation
+
+2016-06-07  [Ricardo Mones] 3.13.2-148-ge08f7db
+
+	* tools/README
+	* tools/cm-reparent.pl		
+		Fix phrasing, terminology and typos
+
+2016-06-07  [Ricardo Mones] 3.13.2-147-gebf29bd
+
+	* tools/README
+	* tools/cm-reparent.pl		
+		Add new action script for fixing threads  Many thanks to H.Merijn
+		Brand for contributing it!
+
+2016-06-02  [Ricardo Mones] 3.13.2-146-g4bb9ba0
+
+	* src/html.c		
+		Use Unicode, don't restrict ourselves to ASCII
+
+2016-06-01  [Charles Lehner] 3.13.2-145-g1805e09
+
+	* src/html.c		
+		Indicate list items in html
+
+2016-05-30  [Andrej Kacian] 3.13.2-144-g3b6d06f
+
+	* src/common/timing.h		
+		Fixed calculation of timing.h timer for Windows.
+
+2016-05-28  [Andrej Kacian] 3.13.2-143-g31a9c52
+
+	* src/mainwindow.c		
+		Fix --select CLI option on Windows when selecting a particular
+		message.
+
+2016-05-24  [Andrej Kacian] 3.13.2-142-g54ce0e8
+
+	* doc/src/password_encryption.txt
+	* src/password.c		
+		Use PBKDF2 to derive encryption key for passwords.  ...instead of my
+		previous hash-then-xor nonsense.
+
+2016-05-24  [Paul] 3.13.2-141-g8ceef64
+
+	* src/matcher.c		
+		fix crash introduced in c7e1e0bbdf72269708a53075a4accecb61ebebe2
+
+2016-05-20  [Andrej Kacian] 3.13.2-140-gf7b5405
+
+	* src/common/utils.c
+	* src/common/utils.h
+	* src/password.c		
+		Moved getting random bytes into a separate get_random_bytes()
+		function.
+
+2016-05-12  [Andrej Kacian] 3.13.2-139-ga451a77
+
+	* src/folder.c
+	* src/imap.c
+	* src/prefs_account.c
+	* src/prefs_account.h
+	* src/summaryview.c		
+		Remove imap_use_trash account preference.  Disabling this preference
+		made deleting messages behave incorrectly - they were marked for
+		deletion regardless of whether "delete" or "move to trash" was used,
+		and these actions were not executed immediately, regardless of
+		"immediate_execution" common preference.
+
+2016-05-16  [Paul] 3.13.2-138-gc7e1e0b
+
+	* src/matcher.c		
+		remove matcherrc.pre_names migration. 10 years later, we'll assume
+		everyone has been migrated
+
+2016-05-06  [Andrej Kacian] 3.13.2-137-gc4ebc9d
+
+	* src/summaryview.c		
+		Improve plural handling for "Delete message" dialog.
+
+2016-05-03  [Ricardo Mones] 3.13.2-136-g44d6f57
+
+	* manual/handling.xml		
+		Fix typo in manual  Thanks Charles Curley for noticing
+
+2016-05-02  [Andrej Kacian] 3.13.2-135-gc4a6790
+
+	* src/plugins/pgpcore/claws.def
+	* src/plugins/pgpcore/pgp_viewer.c		
+		Made manual GPG key import work on Windows.
+
+2016-05-02  [Andrej Kacian] 3.13.2-134-g61f7c3c
+
+	* src/plugins/pgpcore/pgp_viewer.c		
+		Ask GpgME for path to gpg executable for manual key import.
+
+2016-05-01  [Ricardo Mones] 3.13.2-133-g37794f6
+
+	* src/plugins/notification/gtkhotkey/gtk-hotkey-error.h
+	* src/plugins/notification/notification_foldercheck.c
+	* src/privacy.c		
+		Fix frequently ocurring typos :)
+
+2016-05-01  [Ricardo Mones] 3.13.2-132-g437f56e
+
+	* src/plugins/perl/cm_perl.pod		
+		Fix some typos in perl plugin's manpage
+
+2016-04-28  [Andrej Kacian] 3.13.2-131-g758a6b1
+
+	* src/plugins/pgpcore/pgp_viewer.c		
+		Fix behavior in selecting PGP MIME signature on Windows.  With old
+		argument order, gpgme_op_verify() returned "empty signature" error on
+		Windows, for reasons unknown.
+
+2016-04-26  [Andrej Kacian] 3.13.2-130-gfc35f5b
+
+	* src/folderview.c
+	* src/imap.c		
+		Use correct dir separator for "Scanning folder ..." in statusbar.
+
+2016-04-22  [Andrej Kacian] 3.13.2-129-ge895ed1
+
+	* src/gtk/w32_filesel.c		
+		More fixes for the Windows native file choosers.  Filter string
+		should be terminated with two nuls. Save dialog did not show for
+		message parts which have no attachment name.
+
+2016-04-22  [Andrej Kacian] 3.13.2-128-g61383c6
+
+	* src/folder.c
+	* src/plugins/rssyl/rssyl_subscribe.c		
+		Disallow folder names ending with a space on Windows.  Closes bug
+		#2781.
+
+2016-04-22  [Andrej Kacian] 3.13.2-127-gf324ae7
+
+	* src/gtk/w32_filesel.c		
+		Make Windows native file/dir choosers work with non-ASCII characters.
+		 Also, make the save chooser supply the correct attachment file name
+		by default, just like the GTK+ one does.
+
+2016-04-18  [Ricardo Mones] 3.13.2-126-gaa108c3
+
+	* manual/es/advanced.xml		
+		Fix closing tag placement  Thanks Paul for noticing ;-)
+
+2016-04-18  [Ricardo Mones] 3.13.2-125-g93ea183
+
+	* manual/advanced.xml		
+		Fix semantic error  Thanks Andrej for the quick review!
+
+2016-04-18  [Ricardo Mones] 3.13.2-124-g5e10879
+
+	* manual/es/advanced.xml		
+		Synchronize Spanish manual
+
+2016-04-18  [Ricardo Mones] 3.13.2-123-geaae8ee
+
+	* manual/advanced.xml		
+		Keep current order and add the default value
+
+2016-04-18  [Andrej Kacian] 3.13.2-122-g37c6945
+
+	* manual/advanced.xml		
+		Document 'master_passphrase_pbkdf2_rounds' hidden preference.
+
+2016-04-16  [Andrej Kacian] 3.13.2-121-g3f96e45
+
+	* src/gtk/Makefile.am
+	* src/gtk/w32_filesel.c		
+		Use native file and folder selection dialogs on Windows.  This is
+		done by compiling in src/gtk/w32_filesel.c instead of filesel.c on
+		Windows. The Makefile.am logic mirrors the one from src/common/.
+
+2016-04-11  [Andrej Kacian] 3.13.2-120-ge630ef9
+
+	* src/password.c		
+		Show duration of PBKDF2 computation in debug output.
+
+2016-04-10  [Andrej Kacian] 3.13.2-119-g1da0623
+
+	* src/addressbook.c		
+		Make double-click open edit dialog also for addressbook datasources. 
+		For example, LDAP servers.
+
+2016-04-09  [Andrej Kacian] 3.13.2-118-gc3345bc
+
+	* src/plugins/rssyl/rssyl_feed_props.c		
+		Prevent an unlikely crash during RSSyl feed properties save.  This is
+		just to shut Coverity up, I don't think it could ever crash this way.
+
+2016-04-09  [Andrej Kacian] 3.13.2-117-g8d59235
+
+	* src/addrindex.c
+	* src/editldap.c
+	* src/ldapctrl.c
+	* src/ldapctrl.h
+	* src/ldapserver.c
+	* src/ldaputil.c		
+		Addressbook now uses password store for LDAP passwords.
+
+2016-04-09  [Andrej Kacian] 3.13.2-116-g39a8fb8
+
+	* src/plugins/rssyl/rssyl.c
+	* src/plugins/rssyl/rssyl_gtk.h		
+		Remove password from passwordstore when deleting a RSSyl feed.
+
+2016-04-09  [Andrej Kacian] 3.13.2-115-gc093e11
+
+	* src/plugins/rssyl/rssyl_feed_props.c		
+		Update passwordstore if RSSyl feed's URL gets changed.
+
+2016-04-09  [Andrej Kacian] 3.13.2-114-g605671c
+
+	* src/passwordstore.c		
+		Fix crash on deleting password from passwordstore.
+
+2016-04-09  [Andrej Kacian] 3.13.2-113-g1f8a152
+
+	* src/plugins/rssyl/rssyl_cb_menu.c		
+		Remove obsolete comment in RSSyl's OPML import.
+
+2016-04-09  [Andrej Kacian] 3.13.2-112-g7c87afd
+
+	* src/plugins/rssyl/rssyl_cb_menu.c		
+		Fix parsing logic in RSSyl OPML import.  Possibly closes bug #3623.
+
+2016-04-08  [Andrej Kacian] 3.13.2-111-g5b146e9
+
+	* src/password.c		
+		Close PRNG source after reading our PBKDF2 salt from it.
+
+2016-04-07  [Andrej Kacian] 3.13.2-110-gffd418a
+
+	* doc/src/password_encryption.txt
+	* src/password.c
+	* src/prefs_common.c
+	* src/prefs_common.h		
+		Use PBKDF2 with HMAC-SHA1 for master passphrase in clawsrc.  The 64
+		bytes long key derivation is stored in 'master_passphrase' pref,
+		together with number of rounds used in its computation.  Introducing
+		also two new common prefs: master_passphrase_salt - holds a randomly
+		generated 64 bytes for use as salt with PBKDF2. Base64-encoded.
+		master_passphrase_pbkdf2_rounds - number of rounds (or iterations)
+		for next passphrase key derivation  The latter can be tweaked by user
+		in case they want to use more or less rounds, e.g. if they're running
+		on weaker hardware and KD with default number of rounds takes too
+		long.
+
+2016-04-07  [Andrej Kacian] 3.13.2-109-ge63f8db
+
+	* src/common/Makefile.am
+	* src/common/pkcs5_pbkdf2.c
+	* src/common/pkcs5_pbkdf2.h		
+		Added PBKDF2 implementation, copied from OpenBSD.
+
+2016-04-06  [Andrej Kacian] 3.13.2-108-gb998857
+
+	* src/plugins/managesieve/claws.def
+	* src/plugins/rssyl/claws.def
+	* src/plugins/spam_report/claws.def
+	* src/plugins/spam_report/plugin.def
+	* src/plugins/vcalendar/claws.def		
+		Update plugins' claws.def filess for Windows build.
+
+2016-04-06  [Andrej Kacian] 3.13.2-107-g75dba92
+
+	* src/common/plugin.c		
+		Remove unneeded plugin_master_passphrase_change().
+
+2016-04-05  [Holger Berndt] 3.13.2-106-g3404740
+
+	* src/plugins/python/composewindowtype.c		
+		Python plugin: Add set_header_list() function for ComposeWindow
+		objects
+
+2016-04-03  [Paul] 3.13.2-105-g3e23374
+
+	* doc/man/claws-mail.1		
+		pay attention there!
+
+2016-04-03  [Paul] 3.13.2-104-gdf7e587
+
+	* README
+	* doc/man/claws-mail.1
+	* manual/claws-mail-manual.xml
+	* manual/de/claws-mail-manual.xml
+	* manual/es/claws-mail-manual.xml
+	* manual/fr/claws-mail-manual.xml		
+		a handful of documentation updates
+
+2016-04-02  [Andrej Kacian] 3.13.2-103-g497cfad
+
+	* src/plugins/rssyl/rssyl.c		
+		RSSyl: zero out password variables after migration to password store
+
+2016-04-02  [Andrej Kacian] 3.13.2-102-g08ed404
+
+	* src/plugins/rssyl/rssyl.c
+	* src/plugins/rssyl/rssyl.h
+	* src/plugins/rssyl/rssyl_feed_props.c
+	* src/plugins/rssyl/rssyl_update_feed.c		
+		Make RSSyl plugin use the password store.
+
+2016-04-02  [Andrej Kacian] 3.13.2-101-g7789c3a
+
+	* src/plugins/rssyl/plugin.c
+	* src/plugins/rssyl/rssyl.c
+	* src/plugins/rssyl/rssyl.h
+	* src/plugins/rssyl/rssyl_gtk.c
+	* src/plugins/rssyl/rssyl_prefs.c		
+		Move RSSyl plugin name to a macro.
+
+2016-04-02  [Ricardo Mones] 3.13.2-100-ga1bb5a0
+
+	* src/action.c
+	* src/addressbook-dbus.c
+	* src/common/ssl_certificate.c
+	* src/headerview.c
+	* src/imap.c
+	* src/summaryview.c
+	* src/textview.c
+	* src/undo.c		
+		Fix some odd debug outputs
+
+2016-04-02  [Andrej Kacian] 3.13.2-99-ge10f0ce
+
+	* configure.ac		
+		Require GnuTLS version 3.0 for password encryption.
+
+2016-04-01  [wwp] 3.13.2-98-g0a55c9b
+
+	* src/Makefile.am		
+		Make use of GNUTLS_CFLAGS to compile.
+
+2016-03-31  [Colin Leroy] 3.13.2-97-gc98793a
+
+	* src/common/utils.c		
+		Fix cast issue
+
+2016-03-31  [Andrej Kacian] 3.13.2-96-g1da6103
+
+	* src/plugins/gdata/gdata_plugin.c		
+		Migrate GData plugin refresh token to password store correctly.
+
+2016-03-30  [Andrej Kacian] 3.13.2-95-g14f31ef
+
+	* src/plugins/spam_report/spam_report_prefs.c		
+		Migrate SpamReport passwords to password store correctly.
+
+2016-03-30  [Andrej Kacian] 3.13.2-94-gc6bdd4b
+
+	* src/plugins/vcalendar/claws.def
+	* src/plugins/vcalendar/plugin.c
+	* src/plugins/vcalendar/plugin.def
+	* src/plugins/vcalendar/vcal_folder.c
+	* src/plugins/vcalendar/vcal_prefs.c
+	* src/plugins/vcalendar/vcal_prefs.h
+	* src/plugins/vcalendar/vcalendar.h		
+		Make vCalendar plugin use the password store.
+
+2016-03-30  [Andrej Kacian] 3.13.2-93-g73e0a2e
+
+	* src/common/utils.c		
+		Rewrite unfold_line() to handle UTF8 line breaks.  This closes bug
+		#3629 - Invalid subject can distort message list view
+
+2016-03-25  [Ricardo Mones] 3.13.2-90-gb2654a1
+
+	* po/zh_TW.po		
+		Fix bug #3628: Typo in zh_TW.po  Patch by rypervenche <sub@ryper.org>
+		(thanks!)
+
+2016-03-25  [Andrej Kacian] 3.13.2-89-g6422829
+
+	* src/inc.c		
+		Fix incorporation dialog focus with master passphrase dialog.
+
+2016-03-25  [Ricardo Mones] 3.13.2-88-g189829e
+
+	* src/password.c		
+		Remove dead code when the #ifndef is true
+
+2016-03-24  [Andrej Kacian] 3.13.2-87-gf268c34
+
+	* src/passwordstore.c		
+		Set empty block->entries to NULL in passwd_store_delete_block().
+
+2016-03-24  [Andrej Kacian] 3.13.2-86-ga9ead9d
+
+	* src/account.c
+	* src/passwordstore.c
+	* src/passwordstore.h		
+		Empty account block in password store when deleting an account.  This
+		effectively deletes it, as empty password blocks are not saved to
+		disk.
+
+2016-03-24  [Andrej Kacian] 3.13.2-85-g0970a98
+
+	* src/password.c		
+		Fix crash in rare corner case in password en/decryption.
+
+2016-03-23  [Andrej Kacian] 3.13.2-84-gd643604
+
+	* src/password.c		
+		Use a hardcoded IV length in password encryption.  ...since we can't
+		count on having GnuTLS new enough to have
+		gnutls_cipher_get_iv_size().
+
+2016-03-23  [Andrej Kacian] 3.13.2-83-gb65e731
+
+	* src/password.c		
+		Use SHA-256 for master_passphrase_hash, since SHA-512 is too new.
+
+2016-03-22  [Andrej Kacian] 3.13.2-82-g34853ee
+
+	* configure.ac		
+		Make gnutls password encryption the default if gnutls is available.
+
+2016-03-19  [Andrej Kacian] 3.13.2-81-g29e0827
+
+	* src/prefs_account.c		
+		Write passwordstore into file also after account passwords migration.
+
+2016-03-19  [Andrej Kacian] 3.13.2-80-g4865bee
+
+	* src/passwordstore.c
+	* src/plugins/gdata/cm_gdata_contacts.c
+	* src/plugins/spam_report/spam_report_prefs.c		
+		Treat storing empty password same as storing NULL password.  (That
+		means delete the password. This simplifies handling scenario where
+		user had a password set, but wants to delete it by leaving
+		corresponding GtkEntry empty.)
+
+2016-03-19  [Andrej Kacian] 3.13.2-79-ga3c5626
+
+	* src/plugins/gdata/cm_gdata_contacts.c
+	* src/plugins/gdata/gdata_plugin.c
+	* src/plugins/spam_report/spam_report_prefs.c
+	* src/prefs_account.c		
+		Write passwordstore into file more often, not just at exit.
+
+2016-03-19  [Andrej Kacian] 3.13.2-78-g125b181
+
+	* src/plugins/spam_report/claws.def
+	* src/plugins/spam_report/spam_report.c
+	* src/plugins/spam_report/spam_report_prefs.c
+	* src/plugins/spam_report/spam_report_prefs.h		
+		Make SpamReport plugin use the password store.
+
+2016-03-19  [Andrej Kacian] 3.13.2-77-ga7a70c6
+
+	* src/password.c		
+		Removed a forgotten debug line.
+
+2016-03-19  [Andrej Kacian] 3.13.2-76-g2eedcae
+
+	* src/passwordstore.c		
+		Do not create password block when deleting a password from store.
+
+2016-03-19  [Andrej Kacian] 3.13.2-75-gda1b45c
+
+	* src/plugins/gdata/cm_gdata_contacts.c		
+		Fix crash when unloading GData plugin when it's not configured.
+
+2016-03-19  [Andrej Kacian] 3.13.2-74-g1a9b1d8
+
+	* src/plugins/gdata/cm_gdata_contacts.c
+	* src/plugins/gdata/cm_gdata_prefs.c
+	* src/plugins/gdata/cm_gdata_prefs.h
+	* src/plugins/gdata/gdata_plugin.c		
+		Make GData plugin use the password store.  Untested, as I have no
+		Google accounts to test with.
+
+2016-03-19  [Andrej Kacian] 3.13.2-73-ge75a870
+
+	* manual/es/keyboard.xml
+	* manual/keyboard.xml		
+		Update manual regarding new show/hide menu shortcut.
+
+2016-03-19  [Andrej Kacian] 3.13.2-72-g79d63f0
+
+	* src/mainwindow.c		
+		Change default show/hide shortcut to Ctrl+F12.
+
+2016-03-14  [Andrej Kacian] 3.13.2-71-g0a7b456
+
+	* src/imap.c
+	* src/inc.c
+	* src/news.c
+	* src/passwordstore.c
+	* src/passwordstore.h
+	* src/plugins/managesieve/managesieve.c
+	* src/plugins/managesieve/sieve_prefs.c
+	* src/prefs_account.c
+	* src/send_message.c
+	* src/wizard.c		
+		Use account ID instead of name in passwordstorerc.
+
+2016-03-14  [Charles Lehner] 3.13.2-70-ge66c916
+
+	* src/plugins/managesieve/managesieve.c
+	* src/plugins/managesieve/sieve_prefs.c
+	* src/plugins/managesieve/sieve_prefs.h		
+		Migrate managesieve to passwordstore
+
+2016-03-03  [Colin Leroy] 3.13.2-70-gbfd8acb
+
+	* src/prefs_gtk.c		
+		Fix unitialised access
+
+2016-03-03  [Andrej Kacian] 3.13.2-69-g499c9fe
+
+	* doc/src/password_encryption.txt
+	* src/common/plugin.c
+	* src/common/plugin.h
+	* src/mainwindow.c
+	* src/mainwindow.h
+	* src/password.c
+	* src/password.h
+	* src/password_gtk.c
+	* src/password_gtk.h
+	* src/plugins/gdata/cm_gdata_prefs.c
+	* src/plugins/gdata/cm_gdata_prefs.h
+	* src/plugins/gdata/gdata_plugin.c
+	* src/plugins/spam_report/plugin.def
+	* src/plugins/spam_report/spam_report.c
+	* src/plugins/spam_report/spam_report_prefs.c
+	* src/plugins/spam_report/spam_report_prefs.h
+	* src/plugins/vcalendar/plugin.c
+	* src/plugins/vcalendar/plugin.def
+	* src/plugins/vcalendar/vcal_prefs.c
+	* src/plugins/vcalendar/vcal_prefs.h
+	* src/prefs_common.c
+	* src/prefs_common.h
+	* src/prefs_other.c		
+		"Master password" is now called "master passphrase".  This is to help
+		diferentiate between passwords coming from accounts, plugins, etc.,
+		and the master passphrase used in an AES encryption key for
+		encrypting these passwords.
+
+2016-03-02  [Andrej Kacian] 3.13.2-68-g5630048
+
+	* src/inc.c		
+		Make POP3 use password store too.
+
+2016-03-02  [Andrej Kacian] 3.13.2-67-g0935eb5
+
+	* src/prefs_gtk.c		
+		Fix previous fix ;-)
+
+2016-03-02  [Andrej Kacian] 3.13.2-66-g1c77978
+
+	* src/prefs_gtk.c		
+		Fix a Coverity warning caused by previous commits.
+
+2016-03-01  [Andrej Kacian] 3.13.2-65-gc3c05b0
+
+	* src/send_message.c		
+		Fix SMTP password use with password store.
+
+2016-02-28  [Andrej Kacian] 3.13.2-64-gcaa44e5
+
+	* src/common/ssl.c
+	* src/common/ssl.h
+	* src/imap.c
+	* src/main.c
+	* src/news.c
+	* src/password.c
+	* src/prefs_account.c
+	* src/prefs_gtk.c
+	* src/send_message.c
+	* src/wizard.c		
+		Make accounts use new password store for their passwords.
+
+2016-02-18  [Andrej Kacian] 3.13.2-63-g2a6f8d1
+
+	* src/Makefile.am
+	* src/common/defs.h
+	* src/passwordstore.c
+	* src/passwordstore.h		
+		Implement a password store.
+
+2016-03-01  [Andrej Kacian] 3.13.2-62-g1b12986
+
+	* src/password.c
+	* src/password.h
+	* src/password_gtk.c
+	* src/prefs_other.c		
+		Upon master password change, ask for old password immediately.
+
+2016-02-25  [Paul] 3.13.2-61-gd349134
+
+	* src/plugins/gdata/cm_gdata_prefs.c
+	* src/plugins/gdata/cm_gdata_prefs.h		
+		fix typos in function name
+
+2016-02-24  [Paul] 3.13.2-60-g19f795c
+
+	* src/common/utils.c		
+		remove the whole unncessary if block, completing the last commit
+
+2016-02-24  [Paul] 3.13.2-59-g01faf42
+
+	* src/common/utils.c		
+		remove spurious single quotes in mailcap_get_command_in_file()
+
+2016-02-24  [Paul] 3.13.2-58-gc2f5ebb
+
+	* src/plugins/gdata/cm_gdata_prefs.c		
+		add missing include
+
+2016-02-20  [Andrej Kacian] 3.13.2-57-g59c5d79
+
+	* src/imap.c		
+		Add warning about missing LOGIN SASL plugin for IMAP.
+
+2016-02-20  [Paul] 3.13.2-56-gc33ae84
+
+	* src/messageview.c		
+		prevent always selecting html part in multipart/alternative  this bug
+		was introduced in 4745b80528426498b9e4f61d0f1a812e94ce1a6e
+
+2016-02-20  [Andrej Kacian] 3.13.2-55-g5bef3ae
+
+	* src/mh.c
+	* src/password.c
+	* src/password_gtk.c		
+		Made the gnutls password encryption work on Win32.
+
+2016-02-20  [Andrej Kacian] 3.13.2-54-g77971f2
+
+	* po/ca.po
+	* po/cs.po
+	* po/de.po
+	* po/en_GB.po
+	* po/es.po
+	* po/fi.po
+	* po/fr.po
+	* po/he.po
+	* po/hu.po
+	* po/it.po
+	* po/lt.po
+	* po/nb.po
+	* po/nl.po
+	* po/pt_BR.po
+	* po/ru.po
+	* po/sk.po
+	* po/sv.po
+	* po/zh_TW.po
+	* src/mh.c
+	* src/password.c
+	* src/password_gtk.c		
+		Revert "Made the gnutls password encryption work on Win32."  This
+		reverts commit 18ccbd586fec890cab70ce34c94c580d69fffdd0. I committed
+		more than I expected, files in po/ snuck in, sorry!
+
+2016-02-20  [Andrej Kacian] 3.13.2-53-g18ccbd5
+
+	* po/ca.po
+	* po/cs.po
+	* po/de.po
+	* po/en_GB.po
+	* po/es.po
+	* po/fi.po
+	* po/fr.po
+	* po/he.po
+	* po/hu.po
+	* po/it.po
+	* po/lt.po
+	* po/nb.po
+	* po/nl.po
+	* po/pt_BR.po
+	* po/ru.po
+	* po/sk.po
+	* po/sv.po
+	* po/zh_TW.po
+	* src/mh.c
+	* src/password.c
+	* src/password_gtk.c		
+		Made the gnutls password encryption work on Win32.
+
+2016-02-19  [Andrej Kacian] 3.13.2-52-gd003ba2
+
+	* src/common/utils.c		
+		Fix a compile error on Win32.
+
+2016-02-19  [Ricardo Mones] 3.13.2-51-gab83c39
+
+	* src/ssl_manager.c		
+		Add scroll to SSL certificates list  Avoids window growing out of
+		screen height when there's a large amount of certificates on the
+		list.
+
+2016-02-19  [Ricardo Mones] 3.13.2-50-g444054e
+
+	* src/plugins/pgpcore/pgp_utils.c		
+		Fix leak on error and error reporting
+
+2016-02-19  [Ricardo Mones] 3.13.2-49-g701a0ba
+
+	* src/plugins/python/python_plugin.c		
+		Fix a couple of typos
+
+2016-02-19  [Ricardo Mones] 3.13.2-48-gd1c40b3
+
+	* doc/man/claws-mail.1
+	* src/main.c		
+		Fix bug #2604: Add support for -geometry  And document it too :-)
+
+2016-02-19  [Ricardo Mones] 3.13.2-47-gbb97461
+
+	* src/imap.c		
+		Fix bug #3578: Strings around MAILIMAP_ERROR…  …could use some
+		whitespace fixes. Patch by Andreas Rönnquist (thanks!).
+
+2016-02-19  [Ricardo Mones] 3.13.2-46-g2469a55
+
+	* src/plugins/fancy/fancy_viewer.c
+	* src/plugins/fancy/fancy_viewer.h		
+		Fix bug #3581: sys:1: Warning: Source ID # was…  …not found when
+		attempting to remove it, and remove unused logic.
+
+2016-02-19  [Ricardo Mones] 3.13.2-45-g4745b80
+
+	* src/messageview.c
+	* src/messageview.h		
+		Fix bug #3028: Claws doesn't select html part if attachments present 
+		Make HTML part search recursive maintaining current functionality:
+		• display first HTML part • promotion of calendar attachments (if
+		vCalendar is available) • not promoting HTML attachments
+
+2016-02-19  [Andrej Kacian] 3.13.2-44-g74e1542
+
+	* src/etpan/imap-thread.c
+	* src/imap.c
+	* src/imap.h
+	* src/prefs_account.c		
+		Implement real LOGIN auth method for IMAP.  The "old LOGIN" was in
+		fact just a basic plaintext login method, using: "LOGIN username
+		password", not the SASL LOGIN method.
+
+2016-02-19  [Andrej Kacian] 3.13.2-43-g7047fa7
+
+	* src/imap.c
+	* src/imap.h
+	* src/prefs_account.c		
+		Enable SASL PLAIN auth mechanism for IMAP accounts.
+
+2016-02-11  [Colin Leroy] 3.13.2-42-g07c4154
+
+	* src/common/plugin.c
+	* src/common/plugin.h
+	* src/password.c
+	* src/plugins/gdata/cm_gdata_prefs.c
+	* src/plugins/gdata/cm_gdata_prefs.h
+	* src/plugins/gdata/gdata_plugin.c
+	* src/plugins/spam_report/plugin.def
+	* src/plugins/spam_report/spam_report.c
+	* src/plugins/spam_report/spam_report_prefs.c
+	* src/plugins/spam_report/spam_report_prefs.h
+	* src/plugins/vcalendar/plugin.c
+	* src/plugins/vcalendar/plugin.def
+	* src/plugins/vcalendar/vcal_prefs.c
+	* src/plugins/vcalendar/vcal_prefs.h		
+		Add a plugin method to allow updating stored passwords on master
+		password change. GData is still untested.
+
+2016-02-11  [Colin Leroy] 3.13.2-41-ge727be6
+
+	* src/plugins/gdata/cm_gdata_contacts.c
+	* src/plugins/spam_report/claws.def
+	* src/plugins/spam_report/spam_report_prefs.c
+	* src/plugins/vcalendar/claws.def
+	* src/plugins/vcalendar/vcal_prefs.c		
+		Actually encrypt passwords before storing them
+
+2016-02-11  [Colin Leroy] 3.13.2-40-gbbc55c4
+
+	* src/plugins/gdata/gdata_plugin.c
+	* src/plugins/spam_report/spam_report.c
+	* src/plugins/vcalendar/plugin.c		
+		Require new password API
+
+2016-02-11  [Colin Leroy] 3.13.2-39-g0ab9bbd
+
+	* src/plugins/spam_report/claws.def
+	* src/plugins/spam_report/spam_report.c
+	* src/plugins/spam_report/spam_report_prefs.c		
+		SpamReport: use new password API
+
+2016-02-11  [Colin Leroy] 3.13.2-38-gb4ec5f3
+
+	* src/plugins/gdata/cm_gdata_contacts.c		
+		GData: use new password API. Completely untested as I don't have the
+		dependancies available to build!
+
+2016-02-11  [Colin Leroy] 3.13.2-37-g1707a23
+
+	* src/prefs_gtk.c		
+		Forgot to memset. We should add an helper function for this.
+
+2016-02-11  [Colin Leroy] 3.13.2-36-ge5bb832
+
+	* src/plugins/vcalendar/claws.def
+	* src/plugins/vcalendar/vcal_folder.c
+	* src/plugins/vcalendar/vcal_meeting_gtk.c
+	* src/plugins/vcalendar/vcal_prefs.c		
+		vCalendar: Use new password API
+
+2016-02-11  [Colin Leroy] 3.13.2-35-gf2c16c5
+
+	* src/account.c		
+		Fix another g_log warning
+
+2016-02-11  [Colin Leroy] 3.13.2-34-g476dc68
+
+	* src/prefs_gtk.c		
+		Fix indentation, sorry
+
+2016-02-11  [Colin Leroy] 3.13.2-33-g667a312
+
+	* src/prefs_gtk.c		
+		Fix a leak and g_log() in case of null passwords
+
+2016-02-11  [Andrej Kacian] 3.13.2-32-g483f9b0
+
+	* src/imap.c		
+		Fix two crashes in IMAP introduced by the passwords change.
+
+2016-02-11  [Andrej Kacian] 3.13.2-31-g2836acb
+
+	* src/gtk/inputdialog.c		
+		Fix inputdialog modality and focus issue.
+
+2016-02-10  [Andrej Kacian] 3.13.2-30-gb88955d
+
+	* src/prefs_other.c		
+		Another logic fix for handling master password change dialog.
+
+2016-02-10  [Andrej Kacian] 3.13.2-29-g3dfc764
+
+	* src/prefs_other.c		
+		Fix a logic error in handling results of master password change
+		dialog.
+
+2016-02-10  [Andrej Kacian] 3.13.2-28-g126c9d8
+
+	* src/mh.c		
+		Fix a segfault caused by freeing a string on incorrect place.  Closes
+		bug #3616.
+
+2016-02-09  [Andrej Kacian] 3.13.2-27-g87ec96c
+
+	* src/mainwindow.c		
+		Addendum to 503cb50 (Fix build with --with-password-encryption=old)
+
+2016-02-08  [Michael Rasmussen] 3.13.2-26-g8f2dc41
+
+	* src/password_gtk.c		
+		Add help text and change text of second label
+
+2016-02-08  [Andrej Kacian] 3.13.2-25-g50ef86e
+
+	* src/password_gtk.c		
+		Improved master password change dialog a bit.
+
+2016-02-08  [Andrej Kacian] 3.13.2-24-g24156a8
+
+	* src/prefs_actions.c		
+		Revert "Fix a teensy weensy memory leak in Action configuration
+		dialog."  This reverts commit
+		2d1d24e2dce8a0a3704ff28e5d2cc878316d0d84.
+
+2016-02-08  [Andrej Kacian] 3.13.2-23-g2d1d24e
+
+	* src/prefs_actions.c		
+		Fix a teensy weensy memory leak in Action configuration dialog.
+
+2016-02-08  [Andrej Kacian] 3.13.2-22-gaf58003
+
+	* src/addressbook-dbus.c		
+		Fix a possible use-after-free for ContactData pointers in new
+		addressbook.
+
+2016-02-08  [Andrej Kacian] 3.13.2-21-gcd7f85f
+
+	* src/procmsg.c		
+		Real fix for #3598. We were zeroing out wrong pointer.
+
+2016-02-08  [Andrej Kacian] 3.13.2-20-g14b55b5
+
+	* src/action.c
+	* src/compose.c
+	* src/folder.c
+	* src/matcher.c
+	* src/mimeview.c
+	* src/plugins/clamd/clamav_plugin.c
+	* src/plugins/pgpinline/pgpinline.c
+	* src/plugins/pgpmime/pgpmime.c
+	* src/plugins/smime/smime.c
+	* src/plugins/tnef_parse/tnef_parse.c
+	* src/privacy.c
+	* src/procmime.c
+	* src/procmime.h		
+		Make procmime_mimeinfo_free_all() zero the passed pointer.  The
+		function's argument type changes from MimeInfo* to MimeInfo**, so
+		that we can zero out the pointer.  This closes bug #3610, reported by
+		Hanno Boeck.
+
+2016-02-08  [Andrej Kacian] 3.13.2-19-g503cb50
+
+	* src/mainwindow.c		
+		Fix build with --with-password-encryption=old
+
+2016-02-07  [Andrej Kacian] 3.13.2-18-gf181179
+
+	* src/mainwindow.c
+	* src/mainwindow.h
+	* src/password.c
+	* src/password.h		
+		Added "Forget master password" mainwindow menu entry.
+
+2016-02-07  [Andrej Kacian] 3.13.2-17-gfb564a4
+
+	* src/password.c
+	* src/password.h		
+		Forget entered master password before trying to change it.  This
+		makes sure the user always has to input current master password
+		before he is allowed to change it.
+
+2016-02-06  [Ricardo Mones] 3.13.2-16-gb7477fb
+
+	* src/imap.c		
+		Fix segfault when account password is not saved…  …in account
+		preferences, introduced also in 54adfb4. In this case acc_pass is
+		NULL, so it must be checked before trying to dereference it.
+
+2016-02-05  [Andrej Kacian] 3.13.2-15-geb130cb
+
+	* src/imap.c		
+		Fix a null pointer dereference introduced by 54adfb4.  acc_pass is
+		pointing to same address as pass, and we are inside an if block that
+		includes "!pass" condition, so trying to zero and free acc_pass is a
+		wrong thing to do.
+
+2016-02-04  [Andrej Kacian] 3.13.2-14-gad9ddd7
+
+	* doc/src/password_encryption.txt		
+		Added password_encryption.txt to docs/src.
+
+2016-01-16  [Andrej Kacian] 3.13.2-13-g54adfb4
+
+	* configure.ac
+	* src/Makefile.am
+	* src/imap.c
+	* src/inc.c
+	* src/news.c
+	* src/password.c
+	* src/password.h
+	* src/password_gtk.c
+	* src/password_gtk.h
+	* src/prefs_common.c
+	* src/prefs_common.h
+	* src/prefs_gtk.c
+	* src/prefs_other.c
+	* src/send_message.c
+	* src/wizard.c		
+		Rewritten account passwords handling.  Passwords are only decrypted
+		before their actual use, not while loading from accountrc. Passwords
+		are stored as "{algorithm}base64encodedciphertext", encrypted using
+		AES-CBC cipher, with PASSCRYPT_KEY used as and encryption key.
+		Optionally, the encryption key, also known as "master password" can
+		be changed by user.
+
+2016-02-03  [Andrej Kacian] 3.13.2-12-ge7374d3
+
+	* doc/src/maintainer_guide.txt
+	* src/Makefile.am
+	* src/simple-gettext.c		
+		Removed simple-gettext.c, as it is not being used at all.
+
+2016-02-02  [Paul] 3.13.2-11-ge7308b6
+
+	* src/toolbar.c		
+		fix Compose account selection when imap folder is selected  don't
+		just select the imap account, ignoring default account et al
+
+2016-01-29  [Paul] 3.13.2-10-g9a84275
+
+	* src/compose.c		
+		automatically use external editor on fwd-as-attachment if option is
+		set
+
+2016-01-28  [Andrej Kacian] 3.13.2-9-gd0c7241
+
+	* src/compose.c		
+		Remove the outer scrollbar from header area.  This means the sender
+		address line, with account selector is always visible.
+
+2016-01-27  [Andrej Kacian] 3.13.2-8-g282fa50
+
+	* src/plugins/rssyl/libfeed/feed.c		
+		Fix superfluous semicolons from 543c7d3.
+
+2016-01-27  [Andrej Kacian] 3.13.2-7-g543c7d3
+
+	* src/plugins/rssyl/libfeed/feed.c
+	* src/plugins/rssyl/libfeed/feed.h
+	* src/plugins/rssyl/libfeed/parser_atom10.c		
+		RSSyl: Handle XHTML content correctly for Atom feeds.  Fixes bug
+		#3603.
+
+2016-01-24  [Colin Leroy] 3.13.2-6-gb3b2d2c
+
+	* src/inc.c		
+		Fix unused variable warning
+
+2016-01-23  [Andrej Kacian] 3.13.2-5-ga5c8092
+
+	* src/mh.c
+	* src/procmsg.c		
+		MH class now should not change working directory anymore.
+
+2016-01-23  [Andrej Kacian] 3.13.2-4-gcbc3670
+
+	* src/procmsg.c		
+		Zero out few forgotten pointers in procmsg_msginfo_free().  This is a
+		follow-up to commit bfb1815.
+
+2016-01-23  [Andrej Kacian] 3.13.2-3-gbfb1815
+
+	* src/action.c
+	* src/compose.c
+	* src/folder.c
+	* src/folderutils.c
+	* src/imap.c
+	* src/inc.c
+	* src/mainwindow.c
+	* src/mbox.c
+	* src/messageview.c
+	* src/mh.c
+	* src/msgcache.c
+	* src/partial_download.c
+	* src/plugins/att_remover/att_remover.c
+	* src/plugins/vcalendar/common-views.c
+	* src/plugins/vcalendar/vcal_folder.c
+	* src/plugins/vcalendar/vcalendar.c
+	* src/procmime.c
+	* src/procmsg.c
+	* src/procmsg.h
+	* src/send_message.c
+	* src/summaryview.c		
+		Make procmsg_msginfo_free() zero out pointers to freed memory.  The
+		function's argument type changes from MsgInfo* to MsgInfo**, so that
+		we can zero out the pointer.  This closes bug #3598, reported by
+		Hanno Boeck.
+
+2016-01-21  [Andrej Kacian] 3.13.2-2-gd4fa90e
+
+	* configure.ac		
+		Fix for fc42499 - really set correct rcdir on Win32.
+
+2016-01-19  [Andrej Kacian] 3.13.2-1-geb08800
+
+	* src/plugins/rssyl/rssyl_subscribe.c		
+		Fix typo in handling feed name ending with a period on Win32.
+
 2016-01-19  [Paul] 3.13.2
 
 	* NEWS
