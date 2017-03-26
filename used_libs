@@ -1,6 +1,7 @@
 libICE.so.6
 libSM.so.6
 libX11.so.6
+libarchive.so.13
 libc.so.6
 libcairo.so.2
 libcanberra-gtk.so.0
@@ -16,10 +17,12 @@ libgmodule-2.0.so.0
 libgnutls.so.30
 libgobject-2.0.so.0
 libgtk-x11-2.0.so.0
+libical.so.2
 liblber-2.4.so.2
 libldap-2.4.so.2
 libm.so.6
 libpango-1.0.so.0
 libpangocairo-1.0.so.0
 libpthread.so.0
+librsvg-2.so.2
 libstartup-notification-1.so.0
