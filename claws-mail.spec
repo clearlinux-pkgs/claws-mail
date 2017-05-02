@@ -4,7 +4,7 @@
 #
 Name     : claws-mail
 Version  : 3.15.0
-Release  : 3
+Release  : 4
 URL      : http://www.claws-mail.org/download.php?file=releases/claws-mail-3.15.0.tar.gz
 Source0  : http://www.claws-mail.org/download.php?file=releases/claws-mail-3.15.0.tar.gz
 Summary  : Claws Mail
